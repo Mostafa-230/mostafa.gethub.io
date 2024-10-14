@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>أهمية الابتكار في العصر الرقمي</title>
+    <style>
+        body { 
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f0e6;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+            direction: rtl;
+            text-align: right;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .dark-theme {
+            background-color: #1a1a2e;
+            color: #ffffff;
+        }
+        h1 {
+            font-size: 36px;
+            color: #00796b;
+            text-align: center;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+        }
+        h2 {
+            font-size: 28px;
+            color: #005b4f;
+            text-transform: uppercase;
+            border-bottom: 2px solid #005b4f;
+            padding-bottom: 10px;
+        }
+        p {
+            font-size: 20px;
+            margin: 10px 0;
+            color: #4b4b4b;
+        }
+        .dark-theme p {
+            color: #ffffff;
+        }
+        .article {
+            background-color: #ffffff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            margin: 20px 0;
+            transition: background-color 0.3s;
+        }
+        .dark-theme .article {
+            background-color: #444;
+        }
+        .btn {
+            background-color: #f57c00;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 18px;
+            margin: 5px;
+            transition: background-color 0.3s;
+            display: inline-block;
+        }
+        .btn:hover {
+            background-color: #e65100;
+        }
+        .image-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        img {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .toggle-btn {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background-color: #f57c00;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .toggle-btn:hover {
+            background-color: #e65100;
+        }
+        .rating {
+            position: absolute;
+            top: 20px;
+            right: 20px; /* موضع النجوم */
+            display: flex;
+            align-items: center;
+            font-size: 36px; /* حجم النجوم */
+        }
+        .star {
+            cursor: pointer;
+            color: #ccc;
+            transition: color 0.2s;
+            margin: 0 2px;
+        }
+        .star:hover,
+        .star.selected {
+            color: #f39c12;
+        }
+    </style>
+</head>
+<body>
+    <button class="toggle-btn" onclick="toggleTheme()">التبديل إلى الوضع الداكن</button>
+    <div class="rating">
+        <span class="star" onclick="rate(1)">★</span>
+        <span class="star" onclick="rate(2)">★</span>
+        <span class="star" onclick="rate(3)">★</span>
+        <span class="star" onclick="rate(4)">★</span>
+        <span class="star" onclick="rate(5)">★</span>
+    </div>
+    <h1>أهمية الابتكار في العصر الرقمي</h1>
+    <div class="article">
+        <div class="image-container">
+            <img src="image (9).png" alt="الابتكار في العصر الرقمي">
+        </div>
+        <h2>1. دور الابتكار في تحسين الحياة اليومية:</h2>
+        <p>يعتبر الابتكار جزءاً أساسياً في التحسين المستمر للحياة اليومية، حيث يساهم في تقديم حلول جديدة لتحديات الحياة المعاصرة ويجعلها أكثر سهولة وكفاءة.</p>
+        
+        <h2>2. التكنولوجيا كمحفز للابتكار:</h2>
+        <p>يلعب التطور التكنولوجي دوراً حاسماً في تعزيز الابتكار، حيث يساعد الأفراد والشركات على تطوير أدوات وتقنيات جديدة تلبي احتياجات المستقبل وتفتح آفاقاً جديدة.</p>
+
+        <h2>3. فوائد الابتكار في المجالات المختلفة:</h2>
+        <p>الابتكار يؤثر على جميع مجالات الحياة، من الصحة والتعليم إلى الصناعة والخدمات. يزيد من الإنتاجية، ويعزز النمو الاقتصادي، ويساهم في تحسين جودة الحياة.</p>
+
+        <h2>الخاتمة:</h2>
+        <p>الابتكار هو القوة الدافعة في عصرنا الرقمي، ويجب أن يستمر التركيز على تشجيعه وتطويره لتحقيق مستقبل مشرق وأكثر تطوراً. إن التفكير الإبداعي والتطوير المستمر هو ما يصنع الفارق الحقيقي.</p>
+        
+        <div class="buttons">
+            <a href="https://wa.me/201099690137" class="btn">تواصل معنا</a>
+            <a href="#" class="btn" onclick="copyAndShare()">شارك المقال</a>
+            <a href="https://ar.wikipedia.org/wiki/ابتكار" class="btn" target="_blank">تعلم أكثر</a>
+            <a href="articles.html" class="btn">المزيد من المقالات</a>
+        </div>
+    </div>
+
+    <script>
+        // تطبيق حالة الوضع المحفوظة عند تحميل الصفحة
+        window.onload = function() {
+            if (localStorage.getItem('theme') === 'dark') {
+                document.body.classList.add('dark-theme');
+                document.querySelector('.toggle-btn').textContent = 'التبديل إلى الوضع الفاتح';
+            }
+            // استرجاع تقييم النجوم
+            const savedRating = localStorage.getItem('rating');
+            if (savedRating) {
+                rate(parseInt(savedRating, 10));
+            }
+        }
+
+        function copyAndShare() {
+            const articleText = "أهمية الابتكار في العصر الرقمي:\nيعتبر الابتكار جزءاً أساسياً في التحسين المستمر للحياة اليومية...";
+            navigator.clipboard.writeText(articleText).then(function() {
+                window.open("https://wa.me/?text=" + encodeURIComponent(articleText), "_blank");
+            }).catch(function(err) {
+                console.error('فشل النسخ', err);
+            });
+        }
+
+        function toggleTheme() {
+            const body = document.body;
+            const btn = document.querySelector('.toggle-btn');
+            body.classList.toggle('dark-theme');
+
+            if (body.classList.contains('dark-theme')) {
+                btn.textContent = 'التبديل إلى الوضع الفاتح';
+                localStorage.setItem('theme', 'dark'); // حفظ الحالة داكنة
+            } else {
+                btn.textContent = 'التبديل إلى الوضع الداكن';
+                localStorage.setItem('theme', 'light'); // حفظ الحالة فاتحة
+            }
+        }
+
+        function rate(stars) {
+            const starElements = document.querySelectorAll('.star');
+            starElements.forEach((star, index) => {
+                star.classList.toggle('selected', index < stars); // تلوين النجوم
+            });
+            localStorage.setItem('rating', stars); // حفظ التقييم
+            alert(`لقد قمت بتقييم المقال بـ ${stars} نجوم!`); // رسالة التأكيد
+        }
+    </script>
+</body>
+</html>
