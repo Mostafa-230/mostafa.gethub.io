@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>فوائد القراءة</title>
+    <style>
+        body { 
+            font-family: 'Arial', sans-serif;
+            background-color: #fafafa;
+            color: #3a3a3a;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+            direction: rtl;
+            text-align: right;
+            transition: background-color 0.3s, color 0.3s; /* تأثير الانتقال */
+        }
+        .dark-theme {
+            background-color: #1a1a2e; /* لون الخلفية الداكن */
+            color: #f0f4f8; /* لون النص الفاتح */
+        }
+        h1 {
+            font-size: 36px;
+            color: #6b4f4f;
+            text-align: center;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            font-size: 28px;
+            color: #b5651d;
+            text-transform: uppercase;
+            border-bottom: 2px solid #b5651d;
+            padding-bottom: 10px;
+        }
+        p {
+            font-size: 20px;
+            margin: 10px 0;
+        }
+        .article {
+            background-color: #ffffff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            margin: 20px 0;
+            transition: background-color 0.3s; /* تأثير الانتقال لخلفية المقال */
+        }
+        .dark-theme .article {
+            background-color: #444; /* لون خلفية المقال في الوضع الداكن */
+        }
+        .btn {
+            background-color: #8b4513;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 18px;
+            margin: 5px;
+            transition: background-color 0.3s;
+            display: inline-block;
+        }
+        .btn:hover {
+            background-color: #6a3c2d;
+        }
+        .image-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        img {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .toggle-btn {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background-color: #6b4f4f;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .toggle-btn:hover {
+            background-color: #b5651d;
+        }
+        /* تنسيق نظام تقييم النجوم */
+        .star-rating {
+            display: flex;
+            align-items: center;
+            margin: 20px 0;
+        }
+        .star {
+            font-size: 36px; /* حجم النجوم */
+            color: gray; /* لون النجوم */
+            margin-left: 2px;
+            cursor: pointer; /* إظهار مؤشر الفأرة كيدل */
+        }
+    </style>
+</head>
+<body>
+    <button class="toggle-btn" onclick="toggleTheme()">التبديل إلى الوضع الداكن</button>
+    
+    <div class="star-rating" id="star-rating">
+        <span class="star" data-value="1">★</span>
+        <span class="star" data-value="2">★</span>
+        <span class="star" data-value="3">★</span>
+        <span class="star" data-value="4">★</span>
+        <span class="star" data-value="5">★</span>
+    </div>
+    
+    <h1>فوائد القراءة وأثرها على العقل</h1>
+    <div class="article">
+        <div class="image-container">
+            <img src="image (2).png" alt="فوائد القراءة">
+        </div>
+        <h2>1. لماذا تعتبر القراءة مهمة؟</h2>
+        <p>القراءة هي وسيلة أساسية للتعلم وتوسيع المدارك، فهي تساعدنا على فهم العالم من حولنا وتزيد من معرفتنا في شتى المجالات. القراءة تعتبر غذاءً للعقل، حيث أنها تحفز الذهن وتجعله أكثر حيوية.</p>
+        
+        <h2>2. فوائد القراءة:</h2>
+        <p>تقدم القراءة العديد من الفوائد التي تعزز الصحة العقلية والجسدية، مثل:
+            <ul>
+                <li><strong>تحسين التركيز:</strong> القراءة تتطلب التركيز والانتباه، مما يساعد على تقوية القدرة على التركيز.</li>
+                <li><strong>توسيع المفردات والمعرفة:</strong> من خلال القراءة، نتعرف على كلمات وأفكار جديدة، مما يساهم في تطوير مهارات اللغة.</li>
+                <li><strong>تحفيز العقل:</strong> القراءة تشبه التمرين العقلي، مما يساعد في الحفاظ على صحة الدماغ وتقليل خطر الأمراض العقلية.</li>
+                <li><strong>تخفيف التوتر:</strong> تساعد القراءة على الاسترخاء والهروب من ضغوط الحياة اليومية.</li>
+            </ul>
+        </p>
+
+        <h2>3. كيف يمكننا تعزيز عادة القراءة؟</h2>
+        <p>لتطوير عادة القراءة، يمكننا:
+            <ul>
+                <li>تخصيص وقت يومي للقراءة، حتى لو كان لبضع دقائق فقط.</li>
+                <li>الانضمام إلى نوادي القراءة لتبادل الآراء والاستفادة من خبرات الآخرين.</li>
+                <li>اختيار الكتب التي تثير اهتمامنا لنجعل القراءة ممتعة ومشوقة.</li>
+            </ul>
+        </p>
+
+        <h2>الخاتمة:</h2>
+        <p>القراءة هي نافذة نطل منها على العالم بأفكاره وثقافاته المتنوعة. يجب أن نسعى لتعزيز هذه العادة في حياتنا، لأنها تمنحنا القوة الفكرية وتفتح لنا آفاقًا لا حدود لها.</p>
+        
+        <div class="buttons">
+            <a href="https://wa.me/201099690137" class="btn">تواصل معنا</a>
+            <a href="#" class="btn" onclick="copyAndShare()">شارك المقال</a>
+            <a href="https://ar.wikipedia.org/wiki/قراءة" class="btn" target="_blank">تعلم أكثر</a>
+            <a href="index.html" class="btn">المزيد من المقالات</a>
+        </div>
+    </div>
+
+    <script>
+        // تحميل الحالة المخزنة وتطبيقها عند تحميل الصفحة
+        window.onload = function() {
+            // استعادة حالة الوضع
+            if (localStorage.getItem('theme') === 'dark') {
+                document.body.classList.add('dark-theme');
+                document.querySelector('.toggle-btn').textContent = 'التبديل إلى الوضع الفاتح';
+            }
+
+            // استعادة التقييم من localStorage
+            const pageTitle = document.title; // الحصول على عنوان الصفحة
+            const savedRating = localStorage.getItem(`rating-${pageTitle}`);
+            const stars = document.querySelectorAll('.star');
+            if (savedRating) {
+                stars.forEach(star => {
+                    star.style.color = star.getAttribute('data-value') <= savedRating ? 'gold' : 'gray';
+                });
+            }
+
+            // إضافة أحداث النقر على النجوم
+            stars.forEach(star => {
+                star.addEventListener('click', function() {
+                    const rating = this.getAttribute('data-value');
+                    localStorage.setItem(`rating-${pageTitle}`, rating); // حفظ التقييم في localStorage
+                    stars.forEach(s => {
+                        s.style.color = s.getAttribute('data-value') <= rating ? 'gold' : 'gray';
+                    });
+                });
+            });
+        };
+
+        // تغيير وتخزين حالة الوضع
+        function toggleTheme() {
+            const body = document.body;
+            const btn = document.querySelector('.toggle-btn');
+            body.classList.toggle('dark-theme');
+            if (body.classList.contains('dark-theme')) {
+                localStorage.setItem('theme', 'dark');
+                btn.textContent = 'التبديل إلى الوضع الفاتح';
+            } else {
+                localStorage.setItem('theme', 'light');
+                btn.textContent = 'التبديل إلى الوضع الداكن';
+            }
+        }
+
+        // نسخ ومشاركة النص
+        function copyAndShare() {
+            const articleText = "فوائد القراءة وأثرها على العقل:\nالقراءة هي وسيلة أساسية للتعلم وتوسيع المدارك...";
+            navigator.clipboard.writeText(articleText).then(function() {
+                window.open("https://wa.me/?text=" + encodeURIComponent(articleText), "_blank");
+            }).catch(function(err) {
+                console.error('فشل النسخ', err);
+            });
+        }
+    </script>
+</body>
+</html>
