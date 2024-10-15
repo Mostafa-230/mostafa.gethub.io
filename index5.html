@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>أهمية الرياضة للصحة</title>
+    <style>
+        body { 
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+            direction: rtl;
+            text-align: right;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .dark-theme {
+            background-color: #1a1a2e; 
+            color: #f0f4f8; 
+        }
+        h1 {
+            font-size: 36px;
+            color: #2e8b57;
+            text-align: center;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+            margin-top: 0px;
+        }
+        h2 {
+            font-size: 28px;
+            color: #556b2f;
+            text-transform: uppercase;
+            border-bottom: 2px solid #556b2f;
+            padding-bottom: 10px;
+        }
+        p {
+            font-size: 20px;
+            margin: 10px 0;
+        }
+        .article {
+            background-color: #ffffff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            margin: 20px 0;
+            transition: background-color 0.3s;
+        }
+        .dark-theme .article {
+            background-color: #444; 
+        }
+        .btn {
+            background-color: #3cb371;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 18px;
+            margin: 5px;
+            transition: background-color 0.3s;
+            display: inline-block;
+        }
+        .btn:hover {
+            background-color: #2e8b57;
+        }
+        .image-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        img {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .toggle-btn {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background-color: #2e8b57;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .toggle-btn:hover {
+            background-color: #3cb371;
+        }
+        .star-rating {
+            display: flex;
+            justify-content: flex-start;
+            margin: 20px 0;
+            direction: ltr;
+        }
+        .star {
+            font-size: 36px; 
+            color: gold; 
+            margin-left: 2px; 
+            cursor: pointer; /* تغيير المؤشر عند المرور على النجوم */
+        }
+        .rating-container {
+            display: flex;
+            justify-content: space-between; 
+            align-items: center; 
+        }
+    </style>
+</head>
+<body>
+    <div class="rating-container">
+        <button class="toggle-btn" onclick="toggleTheme()">التبديل إلى الوضع الداكن</button>
+        <div class="star-rating" id="star-rating">
+            <span class="star" data-value="1">★</span>
+            <span class="star" data-value="2">★</span>
+            <span class="star" data-value="3">★</span>
+            <span class="star" data-value="4">★</span>
+            <span class="star" data-value="5">★</span>
+        </div>
+    </div>
+
+    <h1>أهمية الرياضة للصحة</h1>
+    <div class="article">
+        <div class="image-container">
+            <img src="image (3).png" alt="أهمية الرياضة">
+        </div>
+        <h2>1. لماذا تعتبر الرياضة مهمة؟</h2>
+        <p>الرياضة ليست مجرد نشاط بدني، بل هي نمط حياة يساعد على تحسين الصحة العامة والوقاية من العديد من الأمراض. تساعد ممارسة الرياضة على تحسين الصحة الجسدية والنفسية، وتجعل الجسم أقوى وأكثر مرونة.</p>
+        
+        <h2>2. فوائد الرياضة:</h2>
+        <p>تقدم الرياضة العديد من الفوائد الصحية، من أهمها:
+            <ul>
+                <li><strong>تحسين صحة القلب:</strong> تساعد الرياضة على تقوية عضلة القلب وتقليل مخاطر أمراض القلب.</li>
+                <li><strong>التخلص من الوزن الزائد:</strong> ممارسة الرياضة تساعد على حرق السعرات الحرارية والمحافظة على وزن صحي.</li>
+                <li><strong>تحسين المزاج:</strong> تؤدي ممارسة الرياضة إلى إفراز هرمونات السعادة مثل الإندورفين، مما يساهم في تحسين الحالة النفسية.</li>
+                <li><strong>تعزيز القوة والمرونة:</strong> تساعد الرياضة على تقوية العضلات وزيادة المرونة وتحسين التوازن.</li>
+            </ul>
+        </p>
+
+        <h2>3. نصائح لبدء ممارسة الرياضة:</h2>
+        <p>للبدء في ممارسة الرياضة بفعالية، يُفضل:
+            <ul>
+                <li>اختيار نشاط تستمتع به، مثل المشي أو السباحة أو ركوب الدراجة.</li>
+                <li>تحديد أوقات محددة لممارسة الرياضة خلال الأسبوع للحفاظ على الانتظام.</li>
+                <li>البدء ببطء وزيادة الشدة تدريجيًا لتجنب الإصابات.</li>
+            </ul>
+        </p>
+
+        <h2>الخاتمة:</h2>
+        <p>الرياضة هي أسلوب حياة صحي يمنحنا الطاقة والمرونة ويحسن من نوعية حياتنا. لذا، اجعل الرياضة جزءًا من روتينك اليومي لتستمتع بصحة أفضل وحياة نشيطة.</p>
+        
+        <div class="buttons">
+            <a href="https://wa.me/201099690137" class="btn">تواصل معنا</a>
+            <a href="#" class="btn" onclick="copyAndShare()">شارك المقال</a>
+            <a href="https://ar.wikipedia.org/wiki/رياضة" class="btn" target="_blank">تعلم أكثر</a>
+            <a href="index.html" class="btn">المزيد من المقالات</a>
+        </div>
+    </div>
+
+    <script>
+        // استرجاع الوضع عند تحميل الصفحة
+        window.onload = function() {
+            const savedTheme = localStorage.getItem('theme');
+            if (savedTheme === 'dark') {
+                document.body.classList.add('dark-theme');
+                document.querySelector('.toggle-btn').textContent = 'التبديل إلى الوضع الفاتح';
+            }
+
+            // استرجاع التقييم عند تحميل الصفحة
+            const pageTitle = document.title; // الحصول على عنوان الصفحة
+            const savedRating = localStorage.getItem(`rating-${pageTitle}`); // استرجاع التقييم
+            if (savedRating) {
+                updateStarRating(savedRating);
+            }
+        };
+
+        function toggleTheme() {
+            const body = document.body;
+            const btn = document.querySelector('.toggle-btn');
+            body.classList.toggle('dark-theme');
+            if (body.classList.contains('dark-theme')) {
+                btn.textContent = 'التبديل إلى الوضع الفاتح';
+                localStorage.setItem('theme', 'dark');
+            } else {
+                btn.textContent = 'التبديل إلى الوضع الداكن';
+                localStorage.setItem('theme', 'light');
+            }
+        }
+
+        function updateStarRating(rating) {
+            const stars = document.querySelectorAll('.star');
+            stars.forEach((star, index) => {
+                star.style.color = index < rating ? 'gold' : 'gray'; // تحديث لون النجوم
+            });
+        }
+
+        // إضافة أحداث النقر للنجوم
+        const stars = document.querySelectorAll('.star');
+        stars.forEach(star => {
+            star.addEventListener('click', function() {
+                const rating = this.getAttribute('data-value'); // الحصول على قيمة النجمة
+                updateStarRating(rating);
+                const pageTitle = document.title; // الحصول على عنوان الصفحة
+                localStorage.setItem(`rating-${pageTitle}`, rating); // حفظ التقييم في localStorage
+            });
+        });
+
+        function copyAndShare() {
+            const articleText = "أهمية الرياضة للصحة:\nالرياضة ليست مجرد نشاط بدني، بل هي نمط حياة يساعد على تحسين الصحة العامة...";
+            navigator.clipboard.writeText(articleText).then(function() {
+                window.open("https://wa.me/?text=" + encodeURIComponent(articleText), "_blank");
+            }).catch(function(err) {
+                console.error('فشل النسخ', err);
+            });
+        }
+    </script>
+</body>
+</html>
