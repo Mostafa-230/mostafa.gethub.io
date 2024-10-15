@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مقالة عن الذكاء الاصطناعي</title>
+    <style>
+        body { 
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f4f8;
+            color: #1a1a2e;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+            direction: rtl;
+            text-align: right;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .dark-theme {
+            background-color: #1a1a2e;
+            color: #f0f4f8;
+        }
+        h1 {
+            font-size: 36px;
+            color: #16213e;
+            text-align: center;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            font-size: 28px;
+            color: #0f3460;
+            text-transform: uppercase;
+            border-bottom: 2px solid #0f3460;
+            padding-bottom: 10px;
+        }
+        p {
+            font-size: 20px;
+            margin: 10px 0;
+        }
+        .article {
+            background-color: #ffffff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            margin: 20px 0;
+            transition: background-color 0.3s;
+        }
+        .dark-theme .article {
+            background-color: #444;
+        }
+        .btn {
+            background-color: #533483;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 18px;
+            margin: 5px;
+            transition: background-color 0.3s;
+            display: inline-block;
+        }
+        .btn:hover {
+            background-color: #3a2d5c;
+        }
+        .image-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        img {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .toggle-btn {
+            background-color: #16213e;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .toggle-btn:hover {
+            background-color: #0f3460;
+        }
+        .rating {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+        }
+        .star {
+            font-size: 36px;
+            color: gold;
+            margin-left: 5px;
+            cursor: pointer;
+        }
+        .footer {
+            background-color: #f0f4f8;
+            color: #1a1a2e;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .comment-btn {
+            background-color: #533483;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 18px;
+            margin: 5px;
+            transition: background-color 0.3s;
+            display: inline-block;
+        }
+        .comment-btn:hover {
+            background-color: #3a2d5c;
+        }
+        .test-btn {
+            background-color: #009688;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 18px;
+            margin: 5px;
+            transition: background-color 0.3s;
+            display: inline-block;
+        }
+        .test-btn:hover {
+            background-color: #00796b;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="rating">
+            <span class="star" onclick="rate(1)">★</span>
+            <span class="star" onclick="rate(2)">★</span>
+            <span class="star" onclick="rate(3)">★</span>
+            <span class="star" onclick="rate(4)">★</span>
+            <span class="star" onclick="rate(5)">★</span>
+        </div>
+        <button class="toggle-btn" onclick="toggleTheme()">التبديل إلى الوضع الداكن</button>
+    </div> <h1>الذكاء الاصطناعي: من النشأة إلى الثورة الحديثة</h1>
+
+    <div class="article">
+        <div class="image-container">
+            <img src="image.png" alt="الذكاء الاصطناعي">
+        </div>
+
+        <h2>1. تعريف الذكاء الاصطناعي</h2>
+        <p>الذكاء الاصطناعي هو مجال علمي يُعنى بتطوير الأنظمة القادرة على محاكاة الذكاء البشري. يتضمن هذا القدرات على التعلم، والتفكير المنطقي، والتعرف على الأنماط، وحل المشكلات. تم تطوير هذا المجال ليكون قادرًا على مساعدة البشر في أداء مهام معقدة بفعالية عالية.</p>
+
+        <h2>2. تاريخ الذكاء الاصطناعي</h2>
+        <p>بدأت الأبحاث في الذكاء الاصطناعي في منتصف القرن العشرين، عندما ظهرت أفكار تركز على إمكانية بناء آلات تفكر كالإنسان. في عام 1956، عُقد مؤتمر دارتموث، حيث وُلد مفهوم الذكاء الاصطناعي كمجال مستقل، وتم تحديد أهدافه الأولى، التي ركزت على التعرف على الأنماط وتطوير البرمجيات التفاعلية.</p>
+
+        <h2>3. أنواع الذكاء الاصطناعي</h2>
+        <p>يمكن تصنيف الذكاء الاصطناعي إلى عدة أنواع، منها:
+            <ul>
+                <li><strong>الذكاء الاصطناعي الضيق:</strong> يقوم بمهمة واحدة بدقة، مثل المساعدات الصوتية.</li>
+                <li><strong>الذكاء الاصطناعي العام:</strong> يُحاكي الذكاء البشري بشكل أكبر ويستطيع التعامل مع مهام متعددة.</li>
+                <li><strong>الذكاء الاصطناعي الفائق:</strong> هو نظرية تتحدث عن أنظمة تتفوق على الذكاء البشري في جميع المجالات.</li>
+            </ul>
+        </p>
+
+        <h2>4. تقنيات الذكاء الاصطناعي</h2>
+        <p>تعتمد أنظمة الذكاء الاصطناعي على تقنيات متعددة، ومنها:
+            <ul>
+                <li><strong>التعلم الآلي (Machine Learning):</strong> تمكين الآلة من تحسين أدائها بناءً على البيانات.</li>
+                <li><strong>التعلم العميق (Deep Learning):</strong> يعتمد على الشبكات العصبية المتعددة الطبقات لتحليل البيانات.</li>
+                <li><strong>معالجة اللغة الطبيعية (NLP):</strong> قدرة الآلة على فهم وتوليد اللغة البشرية.</li>
+            </ul>
+        </p>
+
+        <h2>5. تطبيقات الذكاء الاصطناعي</h2>
+        <p>تتواجد تطبيقات الذكاء الاصطناعي في كل مناحي الحياة تقريبًا، منها:
+            <ul>
+                <li><strong>التعليم:</strong> من خلال منصات التعليم الذكية التي تقدم محتوى مخصص.</li>
+                <li><strong>الصحة:</strong> تطوير أدوات تساعد الأطباء في التشخيص والعلاج.</li>
+                <li><strong>البيانات الكبيرة (Big Data):</strong> يستخدم لتحليل البيانات وتقديم رؤى استراتيجية للشركات.</li>
+            </ul>
+        </p>
+
+        <h2>6. الذكاء الاصطناعي والخصوصية</h2>
+        <p>تثير تطبيقات الذكاء الاصطناعي قضايا متعلقة بالخصوصية، خاصة في الحالات التي تجمع فيها البيانات عن الأفراد. يمكن أن تؤدي هذه الممارسات إلى انتهاك الخصوصية إذا لم يتم استخدامها بطريقة مسؤولة.</p>
+
+        <h2>7. التأثير الاجتماعي للذكاء الاصطناعي</h2>
+        <p>يتأثر المجتمع بشكل ملحوظ بتطور الذكاء الاصطناعي، من خلال تغيير طبيعة العمل، وتحسين الإنتاجية، وتوفير خدمات أفضل للمجتمع. ولكنه قد يُسبب بطالة في بعض القطاعات.</p>
+
+        <h2>8. أخلاقيات الذكاء الاصطناعي</h2>
+        <p>تتضمن قضايا أخلاقيات الذكاء الاصطناعي المسؤولية في الاستخدام والتطوير الآمن للأنظمة الذكية. تتطلب هذه التقنيات وضع سياسات تعزز من استخدامها بطريقة تحقق المنفعة للبشرية، دون أضرار.</p>
+
+        <h2>9. مستقبل الذكاء الاصطناعي</h2>
+        <p>تُعد إمكانيات الذكاء الاصطناعي غير محدودة في المستقبل، من تطوير أنظمة ذكية تساعد في الحلول البيئية، وحتى المساهمة في السفر الفضائي، واستخدامه لتحقيق الرعاية الصحية المتقدمة.</p>
+
+        <h2>10. التحسين المستمر في الذكاء الاصطناعي</h2>
+        <p>مع التطور التكنولوجي المتسارع، يُتوقع أن تتحسن أنظمة الذكاء الاصطناعي لتشمل قدرات أكبر على التحليل والاستدلال والتفاعل.</p>
+
+        
+        <div class="buttons">
+            <a href="https://wa.me/201099690137" class="btn comment-btn" onclick="shareComment()">إضافة تعليق</a>
+            <a href="#" class="btn" onclick="copyAndShare()">شارك المقال</a>
+            <a href="https://ar.wikipedia.org/wiki/الذكاء_الاصطناعي" class="btn" target="_blank">تعلم أكثر</a>
+            <a href="index.html" class="btn">المزيد من المقالات</a>
+            <a href="#" class="btn" onclick="readArticle()">قراءة المقال</a>
+            <a href="123.html" class="btn test-btn">اختبار الفهم</a>        
+        </div>
+    </div>
+
+    <div class="footer">
+        &copy; 2024 جميع الحقوق محفوظة
+    </div>
+
+    <script>
+        // استعادة الوضع من localStorage عند تحميل الصفحة
+        window.onload = function() {
+            const savedTheme = localStorage.getItem('theme');
+            const body = document.body;
+            const btn = document.querySelector('.toggle-btn');
+            
+            if (savedTheme === 'dark') {
+                body.classList.add('dark-theme');
+                btn.textContent = 'التبديل إلى الوضع الفاتح';
+            } else {
+                body.classList.remove('dark-theme');
+                btn.textContent = 'التبديل إلى الوضع الداكن';
+            }
+        };
+
+        function toggleTheme() {
+            const body = document.body;
+            const btn = document.querySelector('.toggle-btn');
+            
+            body.classList.toggle('dark-theme');
+            if (body.classList.contains('dark-theme')) {
+                btn.textContent = 'التبديل إلى الوضع الفاتح';
+                localStorage.setItem('theme', 'dark');
+            } else {
+                btn.textContent = 'التبديل إلى الوضع الداكن';
+                localStorage.setItem('theme', 'light');
+            }
+        }
+
+        function readArticle() {
+            const audio = new Audio('123.mp3');
+            audio.play();
+        }
+
+        function rate(stars) {
+            alert(`شكراً لتقييمك بـ ${stars} نجوم!`);
+        }
+
+        function shareComment() {
+            const comment = prompt("اكتب تعليقك:");
+            if (comment) {
+                alert("تم إرسال تعليقك عبر واتساب!");
+            }
+        }
+
+        function copyAndShare() {
+            navigator.clipboard.writeText(window.location.href)
+                .then(() => alert("تم نسخ رابط المقال لمشاركته!"))
+                .catch(err => alert("فشل في نسخ الرابط!"));
+        }
+    </script>
+</body>
+</html>
