@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اختبار الذكاء الاصطناعي</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f4f8;
+            color: #1a1a2e;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+            direction: rtl;
+            text-align: right;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        h1 {
+            font-size: 36px;
+            color: #16213e;
+            text-align: center;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+        }
+
+        .question {
+            background-color: #ffffff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            margin: 20px 0;
+        }
+
+        .options button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            background-color: #009688; /* لون خلفية الأزرار */
+            color: white;
+        }
+
+        .options button:active {
+            background-color: #00796b; /* لون خلفية الأزرار عند الضغط */
+        }
+
+        .result {
+            text-align: center;
+            margin-top: 20px;
+            display: none;
+        }
+
+        .correct {
+            background-color: #4caf50; /* لون الأخضر الفاقع */
+            color: white;
+        }
+
+        .incorrect {
+            background-color: #f44336; /* لون الأحمر */
+            color: white;
+        }
+
+        #result-button {
+            display: block;
+            margin: 20px auto;
+            background-color: #533483;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        #result-button:hover {
+            background-color: #3a2d5c;
+        }
+
+        #back-button {
+            background-color: #009688; /* لون زر العودة */
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            position: absolute;
+            top: 20px; /* وضع الزر في أعلى الصفحة */
+            right: 20px; /* وضع الزر في يسار الصفحة */
+        }
+
+        #back-button:hover {
+            background-color: #fb8c00;
+        }
+    </style>
+</head>
+<body>
+
+    <button id="back-button" onclick="goBack()">عودة</button>
+    <h1>اختبار الذكاء الاصطناعي</h1>
+    <div id="quiz-container">
+        <div class="question">
+            <p>1. ما هو تعريف الذكاء الاصطناعي، وما هي القدرات الأساسية التي يشملها؟</p>
+            <div class="options">
+                <button onclick="checkAnswer(this, 'incorrect')">أ) تقنيات البرمجة الأساسية</button>
+                <button onclick="checkAnswer(this, 'correct')">ب) الأنظمة القادرة على محاكاة الذكاء البشري</button>
+                <button onclick="checkAnswer(this, 'incorrect')">ج) أدوات الرسم والتصميم</button>
+                <button onclick="checkAnswer(this, 'incorrect')">د) البرمجيات المستخدمة في الألعاب فقط</button>
+            </div>
+        </div>
+        <div class="question">
+            <p>2. متى بدأت الأبحاث في مجال الذكاء الاصطناعي، وما هو الحدث الرئيسي الذي يُعتبر بداية هذا المجال؟</p>
+            <div class="options">
+                <button onclick="checkAnswer(this, 'incorrect')">أ) في القرن الثامن عشر</button>
+                <button onclick="checkAnswer(this, 'correct')">ب) في منتصف القرن العشرين (1956)</button>
+                <button onclick="checkAnswer(this, 'incorrect')">ج) في القرن الواحد والعشرين</button>
+                <button onclick="checkAnswer(this, 'incorrect')">د) في نهاية القرن التاسع عشر</button>
+            </div>
+        </div>
+        <div class="question">
+            <p>3. ما الفرق بين الذكاء الاصطناعي الضيق والذكاء الاصطناعي العام؟</p>
+            <div class="options">
+                <button onclick="checkAnswer(this, 'correct')">أ) الذكاء الاصطناعي الضيق يقوم بمهمة واحدة، بينما العام يقوم بمهام متعددة</button>
+                <button onclick="checkAnswer(this, 'incorrect')">ب) كلاهما يؤدّي نفس الوظائف</button>
+                <button onclick="checkAnswer(this, 'incorrect')">ج) الذكاء الاصطناعي العام هو تكنولوجيا قديمة</button>
+                <button onclick="checkAnswer(this, 'incorrect')">د) الذكاء الاصطناعي الضيق يتطلب اتصالات الإنترنت، بينما العام لا يحتاج</button>
+            </div>
+        </div>
+        <div class="question">
+            <p>4. اذكر تقنيتين أساسيتين من تقنيات الذكاء الاصطناعي وشرح كل منهما بإيجاز.</p>
+            <div class="options">
+                <button onclick="checkAnswer(this, 'correct')">أ) التعلم الآلي والتعلم العميق</button>
+                <button onclick="checkAnswer(this, 'incorrect')">ب) التشفير وأمن المعلومات</button>
+                <button onclick="checkAnswer(this, 'incorrect')">ج) برمجة المواقع والتصميم</button>
+                <button onclick="checkAnswer(this, 'incorrect')">د) الرسوم المتحركة وتحريك الشخصيات</button>
+            </div>
+        </div>
+        <div class="question">
+            <p>5. كيف يُمكن أن تؤثر تطبيقات الذكاء الاصطناعي على مجال التعليم؟</p>
+            <div class="options">
+                <button onclick="checkAnswer(this, 'correct')">أ) تقدم محتوى مخصص للطلاب</button>
+                <button onclick="checkAnswer(this, 'incorrect')">ب) تجعل التعليم أكثر صعوبة</button>
+                <button onclick="checkAnswer(this, 'incorrect')">ج) تقلل من عدد المعلمين المطلوبين</button>
+                <button onclick="checkAnswer(this, 'incorrect')">د) تحل محل الكتب المدرسية بالكامل</button>
+            </div>
+        </div>
+        <div class="question">
+            <p>6. ما هي بعض المخاوف المتعلقة بالخصوصية التي تثيرها تطبيقات الذكاء الاصطناعي؟</p>
+            <div class="options">
+                <button onclick="checkAnswer(this, 'correct')">أ) جمع البيانات الشخصية بدون إذن</button>
+                <button onclick="checkAnswer(this, 'incorrect')">ب) استخدام الذكاء الاصطناعي في تطوير الألعاب</button>
+                <button onclick="checkAnswer(this, 'incorrect')">ج) تعزيز الخصوصية من خلال التطبيقات</button>
+                <button onclick="checkAnswer(this, 'incorrect')">د) عدم قدرة الذكاء الاصطناعي على جمع المعلومات</button>
+            </div>
+        </div>
+        <div class="question">
+            <p>7. كيف يمكن أن يؤثر الذكاء الاصطناعي على سوق العمل، وما هي بعض الآثار الاجتماعية المحتملة؟</p>
+            <div class="options">
+                <button onclick="checkAnswer(this, 'incorrect')">أ) زيادة الوظائف الجديدة</button>
+                <button onclick="checkAnswer(this, 'incorrect')">ب) تحسين الرواتب في جميع المجالات</button>
+                <button onclick="checkAnswer(this, 'correct')">ج) خلق بطالة في بعض القطاعات</button>
+                <button onclick="checkAnswer(this, 'incorrect')">د) عدم وجود أي تأثير على سوق العمل</button>
+            </div>
+        </div>
+        <div class="question">
+            <p>8. ما هي الأخلاقيات المرتبطة بتطوير واستخدام أنظمة الذكاء الاصطناعي؟</p>
+            <div class="options">
+                <button onclick="checkAnswer(this, 'correct')">أ) ضرورة استخدام الأنظمة بطرق مسؤولة</button>
+                <button onclick="checkAnswer(this, 'incorrect')">ب) إمكانية استخدامها في الألعاب فقط</button>
+                <button onclick="checkAnswer(this, 'incorrect')">ج) عدم الحاجة لأخلاقيات في هذا المجال</button>
+                <button onclick="checkAnswer(this, 'incorrect')">د) تطوير الذكاء الاصطناعي هو أمر غير قانوني</button>
+            </div>
+        </div>
+        <button id="result-button" onclick="showResults()">عرض النتائج</button>
+        <div id="result" class="result"></div>
+    </div>
+
+    <script>
+        let correctAnswers = 0;
+        let totalQuestions = 8;
+
+        function checkAnswer(button, result) {
+            if (result === 'correct') {
+                button.classList.add('correct');
+                correctAnswers++;
+            } else {
+                button.classList.add('incorrect');
+            }
+            const buttons = button.parentNode.getElementsByTagName('button');
+            for (let i = 0; i < buttons.length; i++) {
+                buttons[i].disabled = true; // تعطيل جميع الأزرار
+            }
+            button.style.backgroundColor = '#005b5c'; // لون أغمق عند الضغط
+        }
+
+        function showResults() {
+            const resultDiv = document.getElementById('result');
+            resultDiv.style.display = 'block';
+            resultDiv.innerHTML = `عدد الإجابات الصحيحة: ${correctAnswers} من ${totalQuestions}`;
+        }
+
+        function goBack() {
+            // هنا يمكنك وضع الكود للعودة إلى الصفحة السابقة أو أي إجراء آخر
+            window.history.back(); // هذه الجملة تعيد المستخدم إلى الصفحة السابقة
+        }
+    </script>
+
+</body>
+</html>
