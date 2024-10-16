@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>أهمية الماء للجسم</title>
+    <style>
+        body { 
+            font-family: 'Arial', sans-serif;
+            background-color: #e0f7fa;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+            direction: rtl;
+            text-align: right;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .dark-theme {
+            background-color: #1a1a2e;
+            color: #f0f4f8;
+        }
+        h1 {
+            font-size: 36px;
+            color: #00796b;
+            text-align: center;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+            margin-top: 70px; /* المسافة العلوية */
+        }
+        h2 {
+            font-size: 28px;
+            color: #004d40;
+            text-transform: uppercase;
+            border-bottom: 2px solid #004d40;
+            padding-bottom: 10px;
+            margin-top: 20px; /* المسافة العلوية */
+        }
+        p {
+            font-size: 20px;
+            margin: 10px 0;
+        }
+        .article {
+            background-color: #ffffff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            margin: 20px 0;
+            transition: background-color 0.3s;
+        }
+        .dark-theme .article {
+            background-color: #444;
+        }
+        .btn {
+            background-color: #009688;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 18px;
+            margin: 5px;
+            transition: background-color 0.3s;
+            display: inline-block;
+        }
+        .btn:hover {
+            background-color: #00796b;
+        }
+        .image-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        img {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .toggle-btn {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background-color: #00796b;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .toggle-btn:hover {
+            background-color: #009688;
+        }
+        .rating {
+            display: flex;
+            align-items: center;
+            position: absolute;
+            top: 10px;
+            right: 20px;
+        }
+        .star {
+            font-size: 36px;
+            color: #ccc;
+            cursor: pointer;
+            transition: color 0.2s;
+            margin: 0 2px;
+        }
+        .star:hover,
+        .star.selected {
+            color: #f39c12;
+        }
+    </style>
+</head>
+<body>
+    <button class="toggle-btn" onclick="toggleTheme()">التبديل إلى الوضع الداكن</button>
+    <div class="rating">
+        <span class="star" data-value="1" onclick="rate(1)">★</span>
+        <span class="star" data-value="2" onclick="rate(2)">★</span>
+        <span class="star" data-value="3" onclick="rate(3)">★</span>
+        <span class="star" data-value="4" onclick="rate(4)">★</span>
+        <span class="star" data-value="5" onclick="rate(5)">★</span>
+    </div>
+    <h1>أهمية الماء للجسم</h1>
+    <div class="article">
+        <div class="image-container">
+            <img src="image (4).png" alt="أهمية الماء">
+        </div>
+        <h2>1. لماذا يُعتبر الماء أساسياً؟</h2>
+        <p>يُعتبر الماء أحد العناصر الأساسية للحياة، حيث يمثل حوالي 60% من وزن الجسم...</p>
+        
+        <h2>2. فوائد الماء:</h2>
+        <p>تتعدد فوائد الماء للجسم، منها...</p>
+
+        <h2>3. كيف يمكننا ضمان شرب كمية كافية من الماء؟</h2>
+        <p>لضمان شرب كمية كافية من الماء، يُفضل...</p>
+
+        <h2>الخاتمة:</h2>
+        <p>الماء هو عنصر أساسي للحياة، ومن الضروري الحرص على شرب كمية كافية منه يومياً...</p>
+        
+        <div class="buttons">
+            <a href="https://wa.me/201099690137" class="btn">تواصل معنا</a>
+            <a href="#" class="btn" onclick="copyAndShare()">شارك المقال</a>
+            <a href="https://ar.wikipedia.org/wiki/ماء" class="btn" target="_blank">تعلم أكثر</a>
+            <a href="index.html" class="btn">المزيد من المقالات</a>
+        </div>
+    </div>
+
+    <script>
+        window.onload = function() {
+            if (localStorage.getItem('theme') === 'dark') {
+                document.body.classList.add('dark-theme');
+                document.querySelector('.toggle-btn').textContent = 'التبديل إلى الوضع الفاتح';
+            }
+
+            const pageTitle = document.title;
+            const savedRating = localStorage.getItem(`rating-${pageTitle}`);
+            if (savedRating) {
+                updateStarRating(savedRating);
+            }
+        }
+
+        function copyAndShare() {
+            const articleText = "أهمية الماء للجسم:\nيُعتبر الماء أحد العناصر الأساسية للحياة...";
+            navigator.clipboard.writeText(articleText).then(function() {
+                window.open("https://wa.me/?text=" + encodeURIComponent(articleText), "_blank");
+            }).catch(function(err) {
+                console.error('فشل النسخ', err);
+            });
+        }
+
+        function toggleTheme() {
+            const body = document.body;
+            const btn = document.querySelector('.toggle-btn');
+            body.classList.toggle('dark-theme');
+
+            if (body.classList.contains('dark-theme')) {
+                btn.textContent = 'التبديل إلى الوضع الفاتح';
+                localStorage.setItem('theme', 'dark');
+            } else {
+                btn.textContent = 'التبديل إلى الوضع الداكن';
+                localStorage.setItem('theme', 'light');
+            }
+        }
+
+        function rate(stars) {
+            const starElements = document.querySelectorAll('.star');
+            starElements.forEach((star, index) => {
+                star.classList.toggle('selected', index < stars);
+            });
+
+            const pageTitle = document.title;
+            localStorage.setItem(`rating-${pageTitle}`, stars);
+           
+        }
+
+        function updateStarRating(rating) {
+            const starElements = document.querySelectorAll('.star');
+            starElements.forEach((star, index) => {
+                star.classList.toggle('selected', index < rating);
+            });
+        }
+    </script>
+</body>
+</html>
