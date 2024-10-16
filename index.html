@@ -106,6 +106,16 @@
         .toggle-btn:hover {
             background-color: #005b4b; /* درجة أغمق للزر */
         }
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 10px 0;
+            background-color: #00796b; /* لون الخلفية */
+            color: white; /* لون النص */
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
     </style>
 </head>
 <body>
@@ -170,6 +180,10 @@
         </div>
     </div>
 
+    <div class="footer">
+        &copy; 2024 جميع الحقوق محفوظة.
+    </div>
+
     <script>
         // عند تحميل الصفحة، تحقق من حالة الوضع المخزنة في localStorage
         window.onload = function() {
@@ -190,21 +204,16 @@
                 localStorage.setItem('theme', 'dark'); // تخزين الحالة في localStorage
             } else {
                 btn.textContent = 'التبديل إلى الوضع الداكن';
-                localStorage.setItem('theme', 'light'); // تخزين الحالة في localStorage
+                localStorage.removeItem('theme'); // إزالة الحالة من localStorage
             }
         }
 
         function filterArticles() {
             const query = document.getElementById('searchQuery').value.toLowerCase();
             const articles = document.querySelectorAll('.image-container');
-
             articles.forEach(article => {
                 const title = article.getAttribute('data-title').toLowerCase();
-                if (title.startsWith(query)) {
-                    article.style.display = 'block'; // عرض المقالة إذا كانت تتطابق
-                } else {
-                    article.style.display = 'none'; // إخفاء المقالة إذا لم تتطابق
-                }
+                article.style.display = title.includes(query) ? 'block' : 'none';
             });
         }
     </script>
