@@ -25,6 +25,7 @@
             color: #827717;
             text-align: center;
             text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+            margin-top: 70px; /* المسافة العلوية */
         }
         h2 {
             font-size: 28px;
@@ -187,7 +188,7 @@
                     star.classList.remove('selected');
                 }
             });
-            alert(`شكراً لتقييمك بـ ${stars} نجوم!`);
+          
             localStorage.setItem('rating', stars); // حفظ التقييم في localStorage
         }
     </script>
