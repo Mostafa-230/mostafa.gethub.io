@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مقالاتنا</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f8ff; /* خلفية فاتحة */
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+            direction: rtl;
+            text-align: right;
+            transition: background-color 0.3s, color 0.3s; /* تأثير الانتقال */
+        }
+        .dark-theme {
+            background-color: #1a1a2e; /* لون الخلفية الداكن */
+            color: #f0f4f8; /* لون النص الفاتح */
+        }
+        h1 {
+            font-size: 36px;
+            color: #00796b; /* لون العنوان */
+            text-align: center;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+            margin-top: 70px; /* زيادة المسافة من الأعلى */
+        }
+        .back-btn {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background-color: #00796b; /* لون الزر */
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 18px;
+            transition: background-color 0.3s;
+        }
+        .back-btn:hover {
+            background-color: #005b4b; /* درجة أغمق عند التحويم */
+        }
+        .search-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .search-input {
+            padding: 10px;
+            width: 80%; /* عرض الحقل */
+            max-width: 400px; /* الحد الأقصى للعرض */
+            border: 1px solid #00796b; /* لون الحدود */
+            border-radius: 24px; /* جعل الحواف دائرية */
+            font-size: 16px;
+        }
+        .gallery {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .image-container {
+            position: relative;
+            width: 300px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .btn {
+            display: block;
+            background-color: #009688; /* لون الزر */
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 18px;
+            margin: 10px auto;
+            width: 80%;
+            text-align: center;
+            transition: background-color 0.3s;
+        }
+        .btn:hover {
+            background-color: #00796b; /* درجة أغمق عند التحويم */
+        }
+        .toggle-btn {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background-color: #00796b; /* لون الزر */
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .toggle-btn:hover {
+            background-color: #005b4b; /* درجة أغمق للزر */
+        }
+    </style>
+</head>
+<body>
+    <button class="toggle-btn" onclick="toggleTheme()">التبديل إلى الوضع الداكن</button>
+    <a href="javascript:history.back()" class="back-btn">العودة</a>
+    <h1>مقالاتنا المهمة</h1>
+    
+    <div class="search-container">
+        <input type="text" class="search-input" id="searchQuery" placeholder="ابحث عن مقالة..." oninput="filterArticles()">
+    </div>
+
+    <div class="gallery" id="gallery">
+        <div class="image-container" data-title="أهمية الرياضة">
+            <img src="image (3).png" alt="أهمية الرياضة">
+            <a href="index5.html" class="btn">أهمية الرياضة</a>
+        </div>
+        <div class="image-container" data-title="أهمية الماء">
+            <img src="image (4).png" alt="أهمية الماء">
+            <a href="index6.html" class="btn">أهمية الماء</a>
+        </div>
+        <div class="image-container" data-title="الصحة النفسية">
+            <img src="image (1).png" alt="الصحة النفسية">
+            <a href="index3.html" class="btn">الصحة النفسية</a>
+        </div>
+        <div class="image-container" data-title="الذكاء الاصطناعي">
+            <img src="image.png" alt="الذكاء الاصطناعي">
+            <a href="index2.html" class="btn">الذكاء الاصطناعي</a>
+        </div>
+        <div class="image-container" data-title="أهمية القراءة">
+            <img src="image (2).png" alt="أهمية القراءة">
+            <a href="index4.html" class="btn">أهمية القراءة</a>
+        </div>
+        <div class="image-container" data-title="حماية البيئة">
+            <img src="image (24).png" alt="حماية البيئة">
+            <a href="index1.html" class="btn">حماية البيئة</a>
+        </div>
+
+        <!-- المقالات الجديدة -->
+        <div class="image-container" data-title="تأثير التكنولوجيا على حياتنا">
+            <img src="image (5).png" alt="تأثير التكنولوجيا على حياتنا">
+            <a href="index7.html" class="btn">تأثير التكنولوجيا على حياتنا</a>
+        </div>
+        <div class="image-container" data-title="فوائد النوم الصحي">
+            <img src="image (6).png" alt="فوائد النوم الصحي">
+            <a href="index8.html" class="btn">فوائد النوم الصحي</a>
+        </div>
+        <div class="image-container" data-title="أهمية التغذية السليمة">
+            <img src="image (7).png" alt="أهمية التغذية السليمة">
+            <a href="index9.html" class="btn">أهمية التغذية السليمة</a>
+        </div>
+        <div class="image-container" data-title="العادات السليمة وتأثيرها">
+            <img src="image (8).png" alt="العادات السليمة وتأثيرها">
+            <a href="index10.html" class="btn">العادات السليمة وتأثيرها</a>
+        </div>
+        <div class="image-container" data-title="أهمية الابتكار في العصر الرقمي">
+            <img src="image (9).png" alt="أهمية الابتكار في العصر الرقمي">
+            <a href="index11.html" class="btn">أهمية الابتكار في العصر الرقمي</a>
+        </div>
+        <div class="image-container" data-title="أهمية التعلم مدى الحياة">
+            <img src="image (10).png" alt="أهمية التعلم مدى الحياة">
+            <a href="index12.html" class="btn">أهمية التعلم مدى الحياة</a>
+        </div>
+    </div>
+
+    <script>
+        // عند تحميل الصفحة، تحقق من حالة الوضع المخزنة في localStorage
+        window.onload = function() {
+            const body = document.body;
+            const theme = localStorage.getItem('theme');
+            if (theme === 'dark') {
+                body.classList.add('dark-theme');
+                document.querySelector('.toggle-btn').textContent = 'التبديل إلى الوضع الفاتح';
+            }
+        };
+
+        function toggleTheme() {
+            const body = document.body;
+            const btn = document.querySelector('.toggle-btn');
+            body.classList.toggle('dark-theme');
+            if (body.classList.contains('dark-theme')) {
+                btn.textContent = 'التبديل إلى الوضع الفاتح';
+                localStorage.setItem('theme', 'dark'); // تخزين الحالة في localStorage
+            } else {
+                btn.textContent = 'التبديل إلى الوضع الداكن';
+                localStorage.setItem('theme', 'light'); // تخزين الحالة في localStorage
+            }
+        }
+
+        function filterArticles() {
+            const query = document.getElementById('searchQuery').value.toLowerCase();
+            const articles = document.querySelectorAll('.image-container');
+
+            articles.forEach(article => {
+                const title = article.getAttribute('data-title').toLowerCase();
+                if (title.startsWith(query)) {
+                    article.style.display = 'block'; // عرض المقالة إذا كانت تتطابق
+                } else {
+                    article.style.display = 'none'; // إخفاء المقالة إذا لم تتطابق
+                }
+            });
+        }
+    </script>
+</body>
+</html>
