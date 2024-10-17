@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مقالة عن حماية البيئة</title>
+    <style>
+        body { 
+            font-family: 'Arial', sans-serif;
+            background-color: #e0f4e4; /* لون خلفية أخضر هادئ */
+            color: #2a4f4f; /* لون نص هادئ */
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+            direction: rtl;
+            text-align: right;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .dark-theme {
+            background-color: #2a4f4f;
+            color: #e0f4e4;
+        }
+        h1 {
+            font-size: 36px;
+            color: #20634a; /* لون أخضر أغمق */
+            text-align: center;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            font-size: 28px;
+            color: #1b5e20; /* لون أخضر هادئ */
+            text-transform: uppercase;
+            border-bottom: 2px solid #1b5e20;
+            padding-bottom: 10px;
+        }
+        p {
+            font-size: 20px;
+            margin: 10px 0;
+        }
+        .article {
+            background-color: #ffffff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            margin: 20px 0;
+            transition: background-color 0.3s;
+        }
+        .dark-theme .article {
+            background-color: #445c57;
+        }
+        .btn {
+            background-color: #20634a; /* لون أخضر جديد */
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 18px;
+            margin: 5px;
+            transition: background-color 0.3s;
+            display: inline-block;
+        }
+        .btn:hover {
+            background-color: #18513d; /* لون أغمق */
+        }
+        .image-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        img {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .toggle-btn {
+            background-color: #1b5e20; /* لون جديد */
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .toggle-btn:hover {
+            background-color: #144c17; /* لون جديد */
+        }
+        .rating {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+        }
+        .star {
+            font-size: 36px;
+            color: gold;
+            margin-left: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="rating">
+            <span class="star" onclick="rate(1)">★</span>
+            <span class="star" onclick="rate(2)">★</span>
+            <span class="star" onclick="rate(3)">★</span>
+            <span class="star" onclick="rate(4)">★</span>
+            <span class="star" onclick="rate(5)">★</span>
+        </div>
+        <button class="toggle-btn" onclick="toggleTheme()">التبديل إلى الوضع الداكن</button>
+    </div>
+    
+    <h1>حماية البيئة: مستقبل مستدام لكوكبنا</h1>
+
+    <div class="article">
+        <div class="image-container">
+            <img src="image.webp" alt="حماية البيئة">
+        </div>
+        <h2>1. أهمية حماية البيئة:</h2>
+        <p>تعد حماية البيئة من أهم القضايا العالمية اليوم، حيث يؤثر التلوث وتغير المناخ وفقدان التنوع البيولوجي على صحة الأرض وسلامة البشرية. إن حماية الموارد الطبيعية والحفاظ على التنوع البيولوجي يساعد في تحسين جودة الحياة وضمان مستقبل مستدام للأجيال القادمة.</p>
+        
+        <h2>2. تأثير التلوث على البيئة:</h2>
+        <p>التلوث له تأثير كبير على الهواء والماء والتربة، مما يؤثر سلبًا على النباتات والحيوانات والبشر. وتشمل أنواع التلوث الشائعة التلوث الصناعي والتلوث البلاستيكي والانبعاثات الكربونية من المركبات والمصانع، التي تزيد من ظاهرة الاحتباس الحراري.</p>
+        
+        <h2>3. كيفية المساهمة في حماية البيئة:</h2>
+        <p>يمكننا جميعًا المساهمة في حماية البيئة من خلال اتخاذ بعض الخطوات البسيطة، مثل:</p>
+        <ul>
+            <li><strong>التقليل من النفايات:</strong> عن طريق إعادة التدوير واستخدام المنتجات القابلة للتحلل البيولوجي.</li>
+            <li><strong>ترشيد استهلاك الطاقة:</strong> عبر استخدام المصابيح الموفرة للطاقة وتقليل استخدام الأجهزة الكهربائية عند عدم الحاجة.</li>
+            <li><strong>التشجير:</strong> زراعة الأشجار تساهم في تنقية الهواء وإعادة التوازن البيئي.</li>
+            <li><strong>دعم المنتجات المستدامة:</strong> اختيار المنتجات التي تصنع بطرق صديقة للبيئة ومن مصادر مستدامة.</li>
+        </ul>
+
+        <h2>4. التحديات البيئية في المستقبل:</h2>
+        <p>من المتوقع أن تزداد التحديات البيئية في المستقبل مع تزايد السكان واستمرار الاستهلاك غير المستدام. ويشمل ذلك ارتفاع درجات الحرارة وتغير أنماط الطقس وازدياد التلوث البحري وتدهور البيئة الطبيعية. من الضروري أن نعمل على تطوير تقنيات صديقة للبيئة لخفض الانبعاثات وتحقيق التوازن البيئي.</p>
+
+        <h2>الخاتمة:</h2>
+        <p>حماية البيئة هي مسؤولية مشتركة بين الحكومات والشركات والأفراد. من خلال الوعي بأهمية البيئة واتخاذ إجراءات بسيطة يوميًا، يمكننا جميعًا إحداث تأثير إيجابي يحافظ على صحة كوكبنا ويضمن لنا وللأجيال القادمة بيئة نظيفة وآمنة.</p>
+        
+        <div class="buttons">
+            <a href="https://wa.me/201099690137" class="btn">تواصل معنا</a>
+            <a href="#" class="btn" onclick="copyAndShare()">شارك المقال</a>
+            <a href="https://ar.wikipedia.org/wiki/حماية_البيئة" class="btn" target="_blank">تعلم أكثر</a>
+            <a href="index.html" class="btn">المزيد من المقالات</a>
+        </div>
+    </div>
+
+    <script>
+        window.onload = function() {
+            const savedTheme = localStorage.getItem('theme');
+            const body = document.body;
+            const btn = document.querySelector('.toggle-btn');
+            
+            if (savedTheme === 'dark') {
+                body.classList.add('dark-theme');
+                btn.textContent = 'التبديل إلى الوضع الفاتح';
+            } else {
+                btn.textContent = 'التبديل إلى الوضع الداكن';
+            }
+            
+            updateStarDisplay();
+        };
+
+        function copyAndShare() {
+            const articleText = "مقالة عن حماية البيئة: حماية البيئة من أهم القضايا العالمية...";
+            navigator.clipboard.writeText(articleText).then(function() {
+                window.open("https://wa.me/?text=" + encodeURIComponent(articleText), "_blank");
+            }).catch(function(err) {
+                console.error('فشل النسخ', err);
+            });
+        }
+
+        function toggleTheme() {
+            const body = document.body;
+            const btn = document.querySelector('.toggle-btn');
+            body.classList.toggle('dark-theme');
+            
+            if (body.classList.contains('dark-theme')) {
+                btn.textContent = 'التبديل إلى الوضع الفاتح';
+                localStorage.setItem('theme', 'dark');
+            } else {
+                btn.textContent = 'التبديل إلى الوضع الداكن';
+                localStorage.setItem('theme', 'light');
+            }
+        }
+
+        let userRating = 0;
+
+        function rate(star) {
+            userRating = star;
+            updateStarDisplay();
+        }
+
+        function updateStarDisplay() {
+            const stars = document.querySelectorAll('.star');
+            stars.forEach((star, index) => {
+                star.style.color = (index < userRating) ? 'gold' : '#ccc';
+            });
+        }
+    </script>
+</body>
+</html>

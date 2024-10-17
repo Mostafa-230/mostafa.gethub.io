@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مقالة عن القراءة</title>
+    <style>
+        body { 
+            font-family: 'Arial', sans-serif;
+            background-color: #eaeff1; /* لون خلفية جديد */
+            color: #3e2723; /* لون نص بني */
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+            direction: rtl;
+            text-align: right;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .dark-theme {
+            background-color: #3e2723;
+            color: #eaeff1;
+        }
+        h1 {
+            font-size: 36px;
+            color: #6d4c41; /* لون جديد */
+            text-align: center;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            font-size: 28px;
+            color: #4e342e; /* لون جديد */
+            text-transform: uppercase;
+            border-bottom: 2px solid #4e342e;
+            padding-bottom: 10px;
+        }
+        p {
+            font-size: 20px;
+            margin: 10px 0;
+        }
+        .article {
+            background-color: #ffffff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            margin: 20px 0;
+            transition: background-color 0.3s;
+        }
+        .dark-theme .article {
+            background-color: #5d4037;
+        }
+        .btn {
+            background-color: #6d4c41; /* لون جديد */
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 18px;
+            margin: 5px;
+            transition: background-color 0.3s;
+            display: inline-block;
+        }
+        .btn:hover {
+            background-color: #4e342e; /* لون جديد */
+        }
+        .image-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        img {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .toggle-btn {
+            background-color: #4e342e; /* لون جديد */
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .toggle-btn:hover {
+            background-color: #3e2723; /* لون جديد */
+        }
+        .rating {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+        }
+        .star {
+            font-size: 36px;
+            color: gold;
+            margin-left: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="rating">
+            <span class="star" onclick="rate(1)">★</span>
+            <span class="star" onclick="rate(2)">★</span>
+            <span class="star" onclick="rate(3)">★</span>
+            <span class="star" onclick="rate(4)">★</span>
+            <span class="star" onclick="rate(5)">★</span>
+        </div>
+        <button class="toggle-btn" onclick="toggleTheme()">التبديل إلى الوضع الداكن</button>
+    </div>
+    
+    <h1>القراءة: نافذة إلى العالم</h1>
+
+    <div class="article">
+        <div class="image-container">
+            <img src="image (3).webp" alt="القراءة">
+        </div>
+        <h2>1. أهمية القراءة:</h2>
+        <p>تعتبر القراءة واحدة من أهم الأنشطة التي يمكن أن يمارسها الفرد. فهي ليست مجرد وسيلة للتسلية، بل هي وسيلة للتعلم والتطوير الذاتي. من خلال القراءة، نتمكن من الوصول إلى عوالم جديدة ومعرفة أفكار وثقافات مختلفة.</p>
+        
+        <h2>2. فوائد القراءة:</h2>
+        <p>تقدم القراءة مجموعة واسعة من الفوائد، منها:</p>
+        <ul>
+            <li><strong>توسيع المعرفة:</strong> تعزز القراءة من معرفتنا بمختلف المواضيع وتساعدنا في فهم العالم من حولنا.</li>
+            <li><strong>تحسين التركيز:</strong> تعزز القراءة من قدرتنا على التركيز والانتباه، مما يساهم في تحسين أدائنا الأكاديمي والمهني.</li>
+            <li><strong>تنمية الخيال:</strong> تشجع القراءة على التفكير الإبداعي وتساعد في تنمية الخيال من خلال قصص وشخصيات متعددة.</li>
+            <li><strong>تخفيف التوتر:</strong> تعتبر القراءة وسيلة فعالة لتخفيف التوتر والقلق، حيث تنقلنا إلى عوالم مختلفة وتمنحنا فرصة للاسترخاء.</li>
+            <li><strong>تحسين اللغة:</strong> تساهم القراءة في تعزيز مهارات الكتابة والتحدث من خلال التعرض لمفردات جديدة وتراكيب لغوية متنوعة.</li>
+        </ul>
+
+        <h2>3. أنواع القراءة:</h2>
+        <p>تتضمن القراءة عدة أنواع، كل منها له ميزاته:</p>
+        <ul>
+            <li><strong>القراءة السريعة:</strong> تعتمد على استيعاب المعلومات بشكل سريع وتساعد في الحصول على الفكرة العامة للنص.</li>
+            <li><strong>القراءة النقدية:</strong> تتطلب تحليل النصوص وفهم الأفكار والآراء المعبر عنها، مما يعزز من مهارات التفكير النقدي.</li>
+            <li><strong>القراءة التخصصية:</strong> تتعلق بالمواضيع المحددة أو المجالات المهنية وتساعد في تعميق المعرفة في مجالات معينة.</li>
+        </ul>
+
+        <h2>4. تحديات القراءة:</h2>
+        <p>رغم فوائد القراءة، تواجه البعض تحديات قد تعيقهم عن الاستمرار في هذه العادة، مثل:</p>
+        <ul>
+            <li><strong>نقص الوقت:</strong> قد يجد البعض صعوبة في تخصيص وقت كافٍ للقراءة في ظل انشغالات الحياة اليومية.</li>
+            <li><strong>الإلهاء:</strong> تساهم التكنولوجيا الحديثة ووسائل التواصل الاجتماعي في إلهاء الكثيرين عن القراءة.</li>
+            <li><strong>قلة الاهتمام:</strong> قد يفتقر البعض إلى الدافع للقراءة نتيجة نقص المعرفة بفوائدها.</li>
+        </ul>
+
+        <h2>5. كيف نطور عادة القراءة؟</h2>
+        <p>لتعزيز عادة القراءة، يمكن اتباع بعض النصائح:</p>
+        <ul>
+            <li>حدد وقتًا محددًا يوميًا للقراءة، حتى لو كان لمدة 10-15 دقيقة.</li>
+            <li>اختر الكتب التي تهمك وتثير فضولك.</li>
+            <li>قم بإنشاء مجموعة قراءة مع الأصدقاء أو العائلة لمشاركة الأفكار والتجارب.</li>
+            <li>تجنب الإلهاءات أثناء القراءة، مثل الهواتف المحمولة والتلفاز.</li>
+        </ul>
+
+        <h2>الخاتمة:</h2>
+        <p>القراءة هي أداة قوية تمكننا من فهم العالم والتفاعل معه بشكل أفضل. من خلال تخصيص وقت للقراءة وتطوير هذه العادة، يمكننا تعزيز معارفنا وتوسيع آفاقنا. دعونا نضع القراءة في قائمة أولوياتنا، لنستفيد من فوائدها العديدة ونحظى بحياة أكثر إثراءً.</p>
+        
+        <div class="buttons">
+            <a href="https://wa.me/201099690137" class="btn">تواصل معنا</a>
+            <a href="#" class="btn" onclick="copyAndShare()">شارك المقال</a>
+            <a href="https://ar.wikipedia.org/wiki/قراءة" class="btn" target="_blank">تعلم أكثر</a>
+            <a href="index.html" class="btn">المزيد من المقالات</a>
+        </div>
+    </div>
+
+    <script>
+        // استعادة الوضع من localStorage عند تحميل الصفحة
+        window.onload = function() {
+            const savedTheme = localStorage.getItem('theme');
+            const body = document.body;
+            const btn = document.querySelector('.toggle-btn');
+            
+            if (savedTheme === 'dark') {
+                body.classList.add('dark-theme');
+                btn.innerText = "التبديل إلى الوضع الفاتح";
+            } else {
+                btn.innerText = "التبديل إلى الوضع الداكن";
+            }
+        };
+
+        function toggleTheme() {
+            const body = document.body;
+            const btn = document.querySelector('.toggle-btn');
+
+            if (body.classList.contains('dark-theme')) {
+                body.classList.remove('dark-theme');
+                btn.innerText = "التبديل إلى الوضع الداكن";
+                localStorage.setItem('theme', 'light');
+            } else {
+                body.classList.add('dark-theme');
+                btn.innerText = "التبديل إلى الوضع الفاتح";
+                localStorage.setItem('theme', 'dark');
+            }
+        }
+
+        function rate(stars) {
+            alert("لقد قمت بتقييم المقال بـ " + stars + " نجوم!");
+            // هنا يمكنك إضافة كود لتخزين التقييم
+        }
+
+        function copyAndShare() {
+            navigator.clipboard.writeText(window.location.href)
+                .then(() => alert('تم نسخ رابط المقال!'))
+                .catch(err => alert('فشل في نسخ الرابط: ', err));
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مقالة عن الإنترنت</title>
+    <style>
+        body { 
+            font-family: 'Arial', sans-serif;
+            background-color: #eaeff1; /* لون خلفية جديد */
+            color: #2b2b2b; /* لون نص جديد */
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+            direction: rtl;
+            text-align: right;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .dark-theme {
+            background-color: #2b2b2b;
+            color: #eaeff1;
+        }
+        h1 {
+            font-size: 36px;
+            color: #4a90e2; /* لون جديد */
+            text-align: center;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            font-size: 28px;
+            color: #003366; /* لون جديد */
+            text-transform: uppercase;
+            border-bottom: 2px solid #003366;
+            padding-bottom: 10px;
+        }
+        p {
+            font-size: 20px;
+            margin: 10px 0;
+        }
+        .article {
+            background-color: #ffffff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            margin: 20px 0;
+            transition: background-color 0.3s;
+        }
+        .dark-theme .article {
+            background-color: #444;
+        }
+        .btn {
+            background-color: #4a90e2; /* لون جديد */
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 18px;
+            margin: 5px;
+            transition: background-color 0.3s;
+            display: inline-block;
+        }
+        .btn:hover {
+            background-color: #357ab8; /* لون جديد */
+        }
+        .image-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        img {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .toggle-btn {
+            background-color: #003366; /* لون جديد */
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .toggle-btn:hover {
+            background-color: #001f33; /* لون جديد */
+        }
+        .rating {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+        }
+        .star {
+            font-size: 36px;
+            color: gold;
+            margin-left: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="rating">
+            <span class="star" onclick="rate(1)">★</span>
+            <span class="star" onclick="rate(2)">★</span>
+            <span class="star" onclick="rate(3)">★</span>
+            <span class="star" onclick="rate(4)">★</span>
+            <span class="star" onclick="rate(5)">★</span>
+        </div>
+        <button class="toggle-btn" onclick="toggleTheme()">التبديل إلى الوضع الداكن</button>
+    </div>
+    
+    <h1>الإنترنت: بوابة العالم الحديث</h1>
+
+    <div class="article">
+        <div class="image-container">
+            <img src="image (12).webp" alt="الإنترنت">
+        </div>
+        <h2>1. تعريف الإنترنت:</h2>
+        <p>الإنترنت هو شبكة عالمية تربط بين الملايين من الحواسيب حول العالم، مما يتيح تبادل المعلومات والبيانات بين الأشخاص والأنظمة. تمثل الإنترنت واحدة من أهم الابتكارات في تاريخ البشرية، حيث غيرت الطريقة التي نتواصل بها ونعمل ونعيش.</p>
+        
+        <h2>2. فوائد الإنترنت:</h2>
+        <p>للإنترنت العديد من الفوائد التي تشمل:</p>
+        <ul>
+            <li><strong>التواصل الفوري:</strong> يمكن للأشخاص التواصل عبر البريد الإلكتروني، ووسائل التواصل الاجتماعي، والمكالمات الصوتية والمرئية.</li>
+            <li><strong>الوصول إلى المعلومات:</strong> توفر الإنترنت الوصول إلى كم هائل من المعلومات حول جميع المواضيع، مما يسهل التعلم والبحث.</li>
+            <li><strong>التجارة الإلكترونية:</strong> يسهل الإنترنت شراء وبيع المنتجات والخدمات عبر منصات التجارة الإلكترونية.</li>
+            <li><strong>التعليم عن بُعد:</strong> يوفر الإنترنت فرصًا للدورات التدريبية والبرامج التعليمية عن بُعد، مما يجعل التعليم متاحًا للجميع.</li>
+            <li><strong>الترفيه:</strong> يمكن للأفراد الاستمتاع بمحتوى ترفيهي متنوع، بما في ذلك الأفلام، والموسيقى، والألعاب، عبر الإنترنت.</li>
+        </ul>
+
+        <h2>3. التحديات المرتبطة بالإنترنت:</h2>
+        <p>رغم فوائد الإنترنت العديدة، إلا أنه يواجه أيضًا تحديات مثل:</p>
+        <ul>
+            <li><strong>الخصوصية:</strong> يمكن أن يتعرض الأفراد لمخاطر تتعلق بخصوصيتهم، مثل تسرب المعلومات الشخصية.</li>
+            <li><strong>الأمان:</strong> تشكل الهجمات الإلكترونية تهديدًا للأمان الشخصي والمؤسسي.</li>
+            <li><strong>التضليل والمعلومات الخاطئة:</strong> يمكن أن يؤدي انتشار المعلومات غير الدقيقة إلى تشكيل آراء خاطئة.</li>
+            <li><strong>الإدمان:</strong> قد يؤدي الاستخدام المفرط للإنترنت إلى مشاكل نفسية وسلوكية.</li>
+        </ul>
+
+        <h2>4. الإنترنت في المستقبل:</h2>
+        <p>مع تقدم التكنولوجيا، من المتوقع أن تستمر الإنترنت في التطور. تشمل الاتجاهات المستقبلية الذكاء الاصطناعي، إنترنت الأشياء، والواقع الافتراضي، مما سيعزز من تجربتنا ويغير الطريقة التي نعيش بها.</p>
+
+        <h2>الخاتمة:</h2>
+        <p>الإنترنت هو أداة قوية يمكن أن تعزز من حياتنا بشكل كبير. ومع ذلك، من المهم أن نتعامل معه بحذر ونكون واعين للتحديات التي يمكن أن تصاحبه. من خلال استخدام الإنترنت بشكل آمن وفعال، يمكننا الاستفادة من إمكاناته الهائلة.</p>
+        
+        <div class="buttons">
+            <a href="https://wa.me/201099690137" class="btn">تواصل معنا</a>
+            <a href="#" class="btn" onclick="copyAndShare()">شارك المقال</a>
+            <a href="https://ar.wikipedia.org/wiki/إنترنت" class="btn" target="_blank">تعلم أكثر</a>
+            <a href="index.html" class="btn">المزيد من المقالات</a>
+        </div>
+    </div>
+
+    <script>
+        // استعادة الوضع من localStorage عند تحميل الصفحة
+        window.onload = function() {
+            const savedTheme = localStorage.getItem('theme');
+            const body = document.body;
+            const btn = document.querySelector('.toggle-btn');
+            
+            if (savedTheme === 'dark') {
+                body.classList.add('dark-theme');
+                btn.textContent = 'التبديل إلى الوضع الفاتح';
+            } else {
+                btn.textContent = 'التبديل إلى الوضع الداكن';
+            }
+            
+            // تحديث مظهر النجوم عند تحميل الصفحة
+            updateStarDisplay();
+        };
+
+        function copyAndShare() {
+            const articleText = "مقالة عن الإنترنت: الإنترنت هو شبكة عالمية تربط بين الملايين من الحواسيب...";
+            navigator.clipboard.writeText(articleText).then(function() {
+                window.open("https://wa.me/?text=" + encodeURIComponent(articleText), "_blank");
+            }).catch(function(err) {
+                console.error('فشل النسخ', err);
+            });
+        }
+
+        function toggleTheme() {
+            const body = document.body;
+            const btn = document.querySelector('.toggle-btn');
+            body.classList.toggle('dark-theme');
+            
+            if (body.classList.contains('dark-theme')) {
+                btn.textContent = 'التبديل إلى الوضع الفاتح';
+                localStorage.setItem('theme', 'dark'); // حفظ الوضع في localStorage
+            } else {
+                btn.textContent = 'التبديل إلى الوضع الداكن';
+                localStorage.setItem('theme', 'light'); // حفظ الوضع في localStorage
+            }
+        }
+
+        let userRating = 0;
+
+        function rate(star) {
+            userRating = star;
+            updateStarDisplay();
+        }
+
+        function updateStarDisplay() {
+            const stars = document.querySelectorAll('.star');
+            stars.forEach((star, index) => {
+                if (index < userRating) {
+                    star.style.color = 'gold';
+                } else {
+                    star.style.color = 'gray';
+                }
+            });
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,192 @@
+   <!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مقالة عن التعلم مدى الحياة</title>
+    <style>
+        body { 
+            font-family: 'Arial', sans-serif;
+            background-color: #eaeff1; /* لون خلفية جديد */
+            color: #2b2b2b; /* لون نص جديد */
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+            direction: rtl;
+            text-align: right;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .dark-theme {
+            background-color: #2b2b2b;
+            color: #eaeff1;
+        }
+        h1 {
+            font-size: 36px;
+            color: #4a90e2; /* لون جديد */
+            text-align: center;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            font-size: 28px;
+            color: #007f5c; /* لون جديد */
+            text-transform: uppercase;
+            border-bottom: 2px solid #007f5c;
+            padding-bottom: 10px;
+        }
+        p {
+            font-size: 20px;
+            margin: 10px 0;
+        }
+        .article {
+            background-color: #ffffff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            margin: 20px 0;
+            transition: background-color 0.3s;
+        }
+        .dark-theme .article {
+            background-color: #444;
+        }
+        .btn {
+            background-color: #4a90e2; /* لون جديد */
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 18px;
+            margin: 5px;
+            transition: background-color 0.3s;
+            display: inline-block;
+        }
+        .btn:hover {
+            background-color: #357ab8; /* لون جديد */
+        }
+        .image-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        img {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .toggle-btn {
+            background-color: #003366; /* لون جديد */
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .toggle-btn:hover {
+            background-color: #001f33; /* لون جديد */
+        }
+        .rating {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+        }
+        .star {
+            font-size: 36px;
+            color: gold;
+            margin-left: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="rating">
+            <span class="star" onclick="rate(1)">★</span>
+            <span class="star" onclick="rate(2)">★</span>
+            <span class="star" onclick="rate(3)">★</span>
+            <span class="star" onclick="rate(4)">★</span>
+            <span class="star" onclick="rate(5)">★</span>
+        </div>
+        <button class="toggle-btn" onclick="toggleTheme()">التبديل إلى الوضع الداكن</button>
+    </div>
+    
+    <h1>أهمية التعلم مدى الحياة</h1>
+
+    <div class="article">
+        <div class="image-container">
+            <img src="image (11).webp" alt="التعلم مدى الحياة">
+        </div>
+        <h2>1. التعلم مدى الحياة: مفهوم أساسي</h2>
+        <p>يُعرف التعلم مدى الحياة بأنه عملية مستمرة من التعلم التي تحدث في جميع مراحل الحياة. يعتبر هذا المفهوم ضروريًا لتطوير المهارات والمعرفة التي تتناسب مع التغيرات السريعة في سوق العمل والمجتمع. من خلال التعلم المستمر، يمكن للأفراد التأقلم مع التحديات الجديدة والمنافسة بشكل أفضل في مجالاتهم.</p>
+        
+        <h2>2. فوائد التعلم مدى الحياة</h2>
+        <p>يوفر التعلم مدى الحياة العديد من الفوائد الهامة، منها:</p>
+        <ul>
+            <li><strong>تعزيز المهارات:</strong> يساعد التعلم المستمر في تطوير المهارات والقدرات اللازمة لتحقيق النجاح المهني والشخصي.</li>
+            <li><strong>المرونة:</strong> يمنح الأفراد القدرة على التكيف مع التغيرات السريعة في بيئة العمل.</li>
+            <li><strong>زيادة فرص العمل:</strong> يزيد التعلم المستمر من فرص الحصول على وظائف جديدة أو الترقيات.</li>
+            <li><strong>تحسين الثقة بالنفس:</strong> يساهم اكتساب مهارات جديدة في تعزيز الثقة بالنفس والشعور بالإنجاز.</li>
+            <li><strong>توسيع المعرفة:</strong> يمكن الأفراد من اكتساب معلومات جديدة حول مجالات مختلفة، مما يثري تجربتهم الحياتية.</li>
+        </ul>
+
+        <h2>3. استراتيجيات التعلم مدى الحياة</h2>
+        <p>هناك عدة استراتيجيات يمكن أن تساعد الأفراد على الانخراط في عملية التعلم مدى الحياة، ومنها:</p>
+        <ul>
+            <li><strong>التعليم الذاتي:</strong> استخدام المصادر المتاحة عبر الإنترنت، مثل الدورات التعليمية والمقالات والفيديوهات التعليمية.</li>
+            <li><strong>المشاركة في ورش العمل:</strong> الانخراط في ورش العمل والمؤتمرات التي تهدف إلى تعزيز المهارات والمعرفة.</li>
+            <li><strong>تبادل المعرفة:</strong> التواصل مع الأقران وتبادل الأفكار والخبرات في مجالات محددة.</li>
+            <li><strong>التسجيل في الدورات الدراسية:</strong> الالتحاق بالدورات الأكاديمية أو المهنية التي توفر تعليماً منظماً.</li>
+            <li><strong>التطوع:</strong> الانخراط في أنشطة تطوعية يمكن أن يساعد في تطوير المهارات واكتساب الخبرة العملية.</li>
+        </ul>
+
+        <h2>4. تحديات التعلم مدى الحياة</h2>
+        <p>رغم الفوائد الكثيرة، يواجه بعض الأفراد تحديات في ممارسة التعلم مدى الحياة، مثل:</p>
+        <ul>
+            <li><strong>قلة الوقت:</strong> يجد البعض صعوبة في تخصيص الوقت الكافي للتعلم وسط مشاغل الحياة اليومية.</li>
+            <li><strong>التمويل:</strong> قد تكون بعض الفرص التعليمية مكلفة، مما يعيق إمكانية الوصول إليها.</li>
+            <li><strong>الدافع:</strong> يحتاج الأفراد إلى تحفيز مستمر للاستمرار في عملية التعلم.</li>
+        </ul>
+
+        <h2>الخاتمة:</h2>
+        <p>يعتبر التعلم مدى الحياة أحد العناصر الأساسية للنجاح في عالم اليوم المتغير بسرعة. من خلال الاستمرار في التعلم، يمكن للأفراد تعزيز مهاراتهم، وزيادة فرصهم في سوق العمل، وتحسين نوعية حياتهم بشكل عام. في النهاية، يعد التعلم استثمارًا في الذات يسهم في تحقيق النجاح الشخصي والمهني.</p>
+        
+        <div class="buttons">
+            <a href="https://wa.me/201099690137" class="btn">تواصل معنا</a>
+            <a href="#" class="btn" onclick="copyAndShare()">شارك المقال</a>
+            <a href="https://ar.wikipedia.org/wiki/تعلم_مدى_الحياة" class="btn" target="_blank">تعلم أكثر</a>
+            <a href="index.html" class="btn">المزيد من المقالات</a>
+        </div>
+    </div>
+    
+    <script>
+        // استعادة الوضع من localStorage عند تحميل الصفحة
+        document.addEventListener("DOMContentLoaded", function() {
+            if (localStorage.getItem("theme") === "dark") {
+                document.body.classList.add("dark-theme");
+            }
+        });
+
+        function toggleTheme() {
+            document.body.classList.toggle("dark-theme");
+            const theme = document.body.classList.contains("dark-theme") ? "dark" : "light";
+            localStorage.setItem("theme", theme);
+            document.querySelector('.toggle-btn').innerText = theme === "dark" ? "التبديل إلى الوضع الفاتح" : "التبديل إلى الوضع الداكن";
+        }
+
+        
+        }
+
+        function copyAndShare() {
+            navigator.clipboard.writeText(window.location.href)
+                .then(() => alert("تم نسخ الرابط ومشاركته بنجاح!"))
+                .catch(err => alert("فشل في نسخ الرابط: " + err));
+        }
+    </script>
+</body>
+</html>

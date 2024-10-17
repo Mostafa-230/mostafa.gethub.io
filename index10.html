@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مقالة عن العادات اليومية</title>
+    <style>
+        body { 
+            font-family: 'Arial', sans-serif;
+            background-color: #eaeff1; /* لون خلفية جديد */
+            color: #2b2b2b; /* لون نص جديد */
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+            direction: rtl;
+            text-align: right;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .dark-theme {
+            background-color: #2b2b2b;
+            color: #eaeff1;
+        }
+        h1 {
+            font-size: 36px;
+            color: #8BC34A; /* لون جديد */
+            text-align: center;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            font-size: 28px;
+            color: #6D9A39; /* لون جديد */
+            text-transform: uppercase;
+            border-bottom: 2px solid #6D9A39;
+            padding-bottom: 10px;
+        }
+        p {
+            font-size: 20px;
+            margin: 10px 0;
+        }
+        .article {
+            background-color: #ffffff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            margin: 20px 0;
+            transition: background-color 0.3s;
+        }
+        .dark-theme .article {
+            background-color: #444;
+        }
+        .btn {
+            background-color: #8BC34A; /* لون جديد */
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 18px;
+            margin: 5px;
+            transition: background-color 0.3s;
+            display: inline-block;
+        }
+        .btn:hover {
+            background-color: #7CB342; /* لون جديد */
+        }
+        .image-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        img {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .toggle-btn {
+            background-color: #6D9A39; /* لون جديد */
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .toggle-btn:hover {
+            background-color: #5A7A2C; /* لون جديد */
+        }
+        .rating {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+        }
+        .star {
+            font-size: 36px;
+            color: gold;
+            margin-left: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="rating">
+            <span class="star" onclick="rate(1)">★</span>
+            <span class="star" onclick="rate(2)">★</span>
+            <span class="star" onclick="rate(3)">★</span>
+            <span class="star" onclick="rate(4)">★</span>
+            <span class="star" onclick="rate(5)">★</span>
+        </div>
+        <button class="toggle-btn" onclick="toggleTheme()">التبديل إلى الوضع الداكن</button>
+    </div>
+    
+    <h1>العادات اليومية وتأثيرها على جودة الحياة</h1>
+
+    <div class="article">
+        <div class="image-container">
+            <img src="image (9).webp" alt="العادات اليومية">
+        </div>
+        <h2>1. مقدمة:</h2>
+        <p>تعتبر العادات اليومية جزءًا أساسيًا من حياة الفرد، حيث تحدد الطريقة التي يعيش بها وجوده اليومي. تلعب هذه العادات دورًا مهمًا في تشكيل شخصيتنا وأسلوب حياتنا، وتأثيرها يمتد إلى جودة حياتنا بشكل عام.</p>
+        
+        <h2>2. أهمية العادات اليومية:</h2>
+        <p>تساعد العادات اليومية الجيدة على تعزيز الصحة النفسية والبدنية، كما تؤثر بشكل إيجابي على الأداء الشخصي والمهني. فالعادات الجيدة تعمل على تنظيم الوقت وتحقيق الأهداف، مما يسهل على الفرد مواجهة التحديات اليومية.</p>
+        
+        <h2>3. أنواع العادات اليومية:</h2>
+        <p>تنقسم العادات اليومية إلى عدة أنواع، ومنها:</p>
+        <ul>
+            <li><strong>العادات الصحية:</strong> مثل ممارسة الرياضة، تناول غذاء متوازن، والحصول على قسط كافٍ من النوم.</li>
+            <li><strong>العادات الاجتماعية:</strong> مثل التواصل مع الأصدقاء والعائلة، والمشاركة في الأنشطة الاجتماعية.</li>
+            <li><strong>العادات المهنية:</strong> مثل تنظيم العمل، تحديد الأهداف اليومية، والتعلم المستمر.</li>
+            <li><strong>العادات النفسية:</strong> مثل ممارسة التأمل، وتدوين اليوميات، والتفكير الإيجابي.</li>
+        </ul>
+
+        <h2>4. تأثير العادات على جودة الحياة:</h2>
+        <p>إن العادات الجيدة تؤثر بشكل مباشر على جودة الحياة. على سبيل المثال، الأفراد الذين يمارسون الرياضة بانتظام يشعرون بمزيد من النشاط والحيوية، بينما الأفراد الذين يتبعون نظام غذائي صحي يتمتعون بصحة أفضل.</p>
+        
+        <h2>5. كيفية تطوير العادات الجيدة:</h2>
+        <p>يمكن للأفراد تطوير العادات الجيدة من خلال:</p>
+        <ul>
+            <li><strong>وضع الأهداف:</strong> تحديد الأهداف الواضحة والواقعية لتسهيل تحقيقها.</li>
+            <li><strong>التخطيط:</strong> وضع خطة يومية أو أسبوعية لتطبيق العادات الجديدة.</li>
+            <li><strong>التتبع:</strong> تسجيل التقدم ومراقبة العادات بشكل دوري.</li>
+            <li><strong>الدعم الاجتماعي:</strong> الانخراط في مجتمع يدعم تطوير العادات الجيدة.</li>
+        </ul>
+
+        <h2>6. العادات السلبية وتأثيرها:</h2>
+        <p>على الجانب الآخر، يمكن أن تؤدي العادات السلبية مثل التدخين أو الإفراط في تناول الوجبات السريعة إلى تدهور جودة الحياة. فهذه العادات تؤثر على الصحة الجسدية والنفسية، مما قد يؤدي إلى مشاكل صحية كبيرة.</p>
+
+        <h2>7. الخاتمة:</h2>
+        <p>إن العادات اليومية هي المفتاح لتحسين جودة حياتنا. من خلال تبني عادات صحية وإيجابية، يمكننا تحقيق التوازن والسعادة في حياتنا. لذلك، يجب أن نكون واعين لاختياراتنا اليومية ونعمل على تحسينها باستمرار.</p>
+        
+        <div class="buttons">
+            <a href="https://wa.me/201099690137" class="btn">تواصل معنا</a>
+            <a href="#" class="btn" onclick="copyAndShare()">شارك المقال</a>
+            <a href="https://ar.wikipedia.org/wiki/عادات_يومية" class="btn" target="_blank">تعلم أكثر</a>
+            <a href="index.html" class="btn">المزيد من المقالات</a>
+        </div>
+    </div>
+
+    <script>
+        // استعادة الوضع من localStorage عند تحميل الصفحة
+        window.onload = function() {
+            const savedTheme = localStorage.getItem('theme');
+            const body = document.body;
+            const btn = document.querySelector('.toggle-btn');
+            
+            if (savedTheme === 'dark') {
+                body.classList.add('dark-theme');
+                btn.textContent = 'التبديل إلى الوضع الفاتح';
+            } else {
+                btn.textContent = 'التبديل إلى الوضع الداكن';
+            }
+            
+            // تحديث مظهر النجوم عند تحميل الصفحة
+            updateStarDisplay();
+        };
+
+        function copyAndShare() {
+            const articleText = "مقالة عن العادات اليومية وتأثيرها على جودة الحياة: العادات اليومية تعتبر جزءًا أساسيًا...";
+            navigator.clipboard.writeText(articleText).then(function() {
+                window.open("https://wa.me/?text=" + encodeURIComponent(articleText), "_blank");
+            }).catch(function(err) {
+                console.error('فشل النسخ: ', err);
+            });
+        }
+
+        function toggleTheme() {
+            const body = document.body;
+            const btn = document.querySelector('.toggle-btn');
+
+            body.classList.toggle('dark-theme');
+
+            if (body.classList.contains('dark-theme')) {
+                btn.textContent = 'التبديل إلى الوضع الفاتح';
+                localStorage.setItem('theme', 'dark');
+            } else {
+                btn.textContent = 'التبديل إلى الوضع الداكن';
+                localStorage.setItem('theme', 'light');
+            }
+        }
+
+        function rate(star) {
+            const stars = document.querySelectorAll('.star');
+            stars.forEach((s, index) => {
+                s.style.color = index < star ? 'gold' : 'lightgray';
+            });
+        }
+
+        function updateStarDisplay() {
+            // تعيين لون النجوم حسب التقييم المخزن (إذا كان موجودًا)
+            const savedRating = localStorage.getItem('rating');
+            if (savedRating) {
+                rate(savedRating);
+            }
+        }
+    </script>
+</body>
+</html>

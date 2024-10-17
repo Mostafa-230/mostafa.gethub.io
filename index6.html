@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مقالة عن الماء</title>
+    <style>
+        body { 
+            font-family: 'Arial', sans-serif;
+            background-color: #eaeff1; /* لون خلفية جديد */
+            color: #2b2b2b; /* لون نص جديد */
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+            direction: rtl;
+            text-align: right;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .dark-theme {
+            background-color: #2b2b2b;
+            color: #eaeff1;
+        }
+        h1 {
+            font-size: 36px;
+            color: #4a90e2; /* لون جديد */
+            text-align: center;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            font-size: 28px;
+            color: #003366; /* لون جديد */
+            text-transform: uppercase;
+            border-bottom: 2px solid #003366;
+            padding-bottom: 10px;
+        }
+        p {
+            font-size: 20px;
+            margin: 10px 0;
+        }
+        .article {
+            background-color: #ffffff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            margin: 20px 0;
+            transition: background-color 0.3s;
+        }
+        .dark-theme .article {
+            background-color: #444;
+        }
+        .btn {
+            background-color: #4a90e2; /* لون جديد */
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 18px;
+            margin: 5px;
+            transition: background-color 0.3s;
+            display: inline-block;
+        }
+        .btn:hover {
+            background-color: #357ab8; /* لون جديد */
+        }
+        .image-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        img {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .toggle-btn {
+            background-color: #003366; /* لون جديد */
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .toggle-btn:hover {
+            background-color: #001f33; /* لون جديد */
+        }
+        .rating {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+        }
+        .star {
+            font-size: 36px;
+            color: gold;
+            margin-left: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="rating">
+            <span class="star" onclick="rate(1)">★</span>
+            <span class="star" onclick="rate(2)">★</span>
+            <span class="star" onclick="rate(3)">★</span>
+            <span class="star" onclick="rate(4)">★</span>
+            <span class="star" onclick="rate(5)">★</span>
+        </div>
+        <button class="toggle-btn" onclick="toggleTheme()">التبديل إلى الوضع الداكن</button>
+    </div>
+    
+    <h1>الماء: سر الحياة</h1>
+
+    <div class="article">
+        <div class="image-container">
+            <img src="image (5).webp" alt="الماء">
+        </div>
+        <h2>1. تعريف الماء:</h2>
+        <p>الماء هو سائل شفاف، عديم اللون والطعم والرائحة في حالته النقية. يُعتبر الماء عنصرًا حيويًا ضروريًا لجميع أشكال الحياة على الأرض. يتكون جزيء الماء من ذرتين من الهيدروجين وذرة واحدة من الأكسجين، مما يمنحه الخصائص الفريدة التي تجعله مهمًا للحياة.</p>
+        
+        <h2>2. أهمية الماء:</h2>
+        <p>تتعدد أهمية الماء في الحياة اليومية، منها:</p>
+        <ul>
+            <li><strong>تغذية الكائنات الحية:</strong> يعتمد جميع الكائنات الحية على الماء في البقاء، حيث يلعب دورًا حيويًا في العمليات البيولوجية مثل التمثيل الغذائي.</li>
+            <li><strong>الزراعة:</strong> يعتبر الماء أساسيًا في الزراعة، حيث تحتاج المحاصيل إلى الماء للنمو وإنتاج الغذاء.</li>
+            <li><strong>تنظيم درجة الحرارة:</strong> يساعد الماء في تنظيم درجة حرارة الكائنات الحية من خلال عملية التبخر، مما يمنع ارتفاع درجات الحرارة بشكل مفرط.</li>
+            <li><strong>تنظيف البيئة:</strong> يعمل الماء على تنظيف البيئة من الشوائب والملوثات، حيث يساهم في تجديد النظم البيئية.</li>
+            <li><strong>الترفيه:</strong> تُستخدم المسطحات المائية في الأنشطة الترفيهية مثل السباحة، والتجديف، وصيد الأسماك.</li>
+        </ul>
+
+        <h2>3. مصادر الماء:</h2>
+        <p>تتعدد مصادر الماء على كوكب الأرض، بما في ذلك:</p>
+        <ul>
+            <li><strong>المياه السطحية:</strong> مثل الأنهار والبحيرات، تُعتبر من المصادر الرئيسية للمياه العذبة.</li>
+            <li><strong>المياه الجوفية:</strong> هي المياه الموجودة تحت سطح الأرض، والتي تُستخدم في الري والشرب.</li>
+            <li><strong>المياه المحلاة:</strong> يتم تحلية المياه المالحة للحصول على مياه عذبة، خاصة في المناطق الجافة.</li>
+            <li><strong>المياه الجليدية:</strong> توجد كميات كبيرة من المياه العذبة في الأنهار الجليدية والقطبين الشمالي والجنوبي.</li>
+        </ul>
+
+        <h2>4. التحديات المتعلقة بالماء:</h2>
+        <p>رغم أهمية الماء، إلا أن هناك تحديات تواجهه، مثل:</p>
+        <ul>
+            <li><strong>نقص المياه:</strong> يعاني العديد من المناطق حول العالم من نقص المياه العذبة، مما يؤثر على الحياة والاقتصاد.</li>
+            <li><strong>تلوث المياه:</strong> تلوث المسطحات المائية يؤثر على صحة الكائنات الحية ويعطل النظام البيئي.</li>
+            <li><strong>تغير المناخ:</strong> يتسبب تغير المناخ في تغييرات في أنماط هطول الأمطار، مما يؤثر على توفر المياه.</li>
+            <li><strong>الإفراط في الاستخدام:</strong> الاستخدام المفرط للمياه يمكن أن يؤدي إلى استنزاف الموارد المائية.</li>
+        </ul>
+
+        <h2>5. المحافظة على الماء:</h2>
+        <p>للحفاظ على موارد المياه، يجب اتخاذ خطوات فعالة، مثل:</p>
+        <ul>
+            <li>تشجيع إعادة استخدام المياه وتدويرها.</li>
+            <li>التوعية بأهمية المياه وضرورة الحفاظ عليها.</li>
+            <li>تطوير تقنيات الري الحديثة لتقليل الفاقد.</li>
+            <li>تقليل التلوث من خلال اتخاذ إجراءات للحفاظ على المياه.</li>
+        </ul>
+
+        <h2>الخاتمة:</h2>
+        <p>الماء هو أساس الحياة، ويجب أن نعمل جميعًا على الحفاظ عليه وحمايته. من خلال اتخاذ خطوات بسيطة في حياتنا اليومية، يمكننا أن نساهم في الحفاظ على هذه الموارد القيمة للأجيال القادمة.</p>
+        
+        <div class="buttons">
+            <a href="https://wa.me/201099690137" class="btn">تواصل معنا</a>
+            <a href="#" class="btn" onclick="copyAndShare()">شارك المقال</a>
+            <a href="https://ar.wikipedia.org/wiki/ماء" class="btn" target="_blank">تعلم أكثر</a>
+            <a href="index.html" class="btn">المزيد من المقالات</a>
+        </div>
+    </div>
+
+    <script>
+        // استعادة الوضع من localStorage عند تحميل الصفحة
+        window.onload = function() {
+            const savedTheme = localStorage.getItem('theme');
+            const body = document.body;
+            const btn = document.querySelector('.toggle-btn');
+            if (savedTheme === 'dark') {
+                body.classList.add('dark-theme');
+                btn.innerText = 'التبديل إلى الوضع الفاتح';
+            }
+        };
+
+        function toggleTheme() {
+            const body = document.body;
+            const btn = document.querySelector('.toggle-btn');
+            body.classList.toggle('dark-theme');
+            if (body.classList.contains('dark-theme')) {
+                btn.innerText = 'التبديل إلى الوضع الفاتح';
+                localStorage.setItem('theme', 'dark');
+            } else {
+                btn.innerText = 'التبديل إلى الوضع الداكن';
+                localStorage.setItem('theme', 'light');
+            }
+        }
+
+        function rate(rating) {
+            alert("شكرًا لتقييمك " + rating + " نجوم!");
+            // هنا يمكنك إضافة كود لحفظ التقييم في قاعدة بيانات
+        }
+
+        function copyAndShare() {
+            navigator.clipboard.writeText(window.location.href)
+                .then(() => {
+                    alert('تم نسخ رابط المقال! يمكنك مشاركته الآن.');
+                })
+                .catch(err => {
+                    alert('فشل في نسخ الرابط: ', err);
+                });
+        }
+    </script>
+</body>
+</html>

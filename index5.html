@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مقالة عن الرياضة</title>
+    <style>
+        body { 
+            font-family: 'Arial', sans-serif;
+            background-color: #eaf7e0; /* لون خلفية أخضر مبهج */
+            color: #2b2b2b;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.8;
+            direction: rtl;
+            text-align: right;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .dark-theme {
+            background-color: #2b2b2b;
+            color: #eaf7e0;
+        }
+        h1 {
+            font-size: 38px;
+            color: #3a944d; /* لون أخضر مبهج */
+            text-align: center;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+        }
+        h2 {
+            font-size: 30px;
+            color: #2d7336; /* لون أخضر أغمق */
+            border-bottom: 3px solid #3a944d;
+            padding-bottom: 8px;
+        }
+        p {
+            font-size: 22px;
+            margin: 12px 0;
+        }
+        .article {
+            background-color: #ffffff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            margin: 20px 0;
+        }
+        .dark-theme .article {
+            background-color: #444;
+        }
+        .btn {
+            background-color: #3a944d; /* لون أخضر مبهج */
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 18px;
+            margin: 5px;
+            transition: background-color 0.3s;
+            display: inline-block;
+        }
+        .btn:hover {
+            background-color: #2d7336; /* لون أخضر أغمق */
+        }
+        .image-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        img {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .toggle-btn {
+            background-color: #2d7336;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .toggle-btn:hover {
+            background-color: #1d5226;
+        }
+        .rating {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+        }
+        .star {
+            font-size: 36px;
+            color: gold;
+            margin-left: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="rating">
+            <span class="star" onclick="rate(1)">★</span>
+            <span class="star" onclick="rate(2)">★</span>
+            <span class="star" onclick="rate(3)">★</span>
+            <span class="star" onclick="rate(4)">★</span>
+            <span class="star" onclick="rate(5)">★</span>
+        </div>
+        <button class="toggle-btn" onclick="toggleTheme()">التبديل إلى الوضع الداكن</button>
+    </div>
+    
+    <h1>الرياضة: مفتاح الصحة والنجاح</h1>
+
+    <div class="article">
+        <div class="image-container">
+            <img src="image (4).webp" alt="الرياضة">
+        </div>
+        <h2>1. تعريف الرياضة:</h2>
+        <p>الرياضة هي مجموعة من الأنشطة البدنية التي تهدف إلى تحسين اللياقة البدنية والصحة العامة، إلى جانب تعزيز روح المنافسة والعمل الجماعي. تعد الرياضة جزءًا هامًا من ثقافات الشعوب حول العالم، حيث تشجع على النمط الحياتي الصحي وتنمية المهارات البدنية والعقلية.</p>
+        
+        <h2>2. فوائد الرياضة:</h2>
+        <p>للرياضة العديد من الفوائد الصحية والنفسية والاجتماعية التي تشمل:</p>
+        <ul>
+            <li><strong>تحسين اللياقة البدنية:</strong> من خلال ممارسة التمارين الرياضية المنتظمة، يتم تحسين كفاءة القلب والأوعية الدموية، وتقوية العضلات والعظام.</li>
+            <li><strong>تعزيز الصحة العقلية:</strong> الرياضة تساهم في تخفيف التوتر والقلق، وتزيد من إنتاج هرمونات السعادة مثل الإندورفين.</li>
+            <li><strong>تنمية الانضباط الذاتي:</strong> من خلال الالتزام بالتمارين الرياضية والمنافسة في الأنشطة، يكتسب الفرد الانضباط والتحكم في النفس.</li>
+            <li><strong>التواصل الاجتماعي:</strong> المشاركة في الأنشطة الرياضية توفر فرصًا للتواصل مع الآخرين، وبناء صداقات جديدة.</li>
+            <li><strong>تنمية المهارات الحركية:</strong> ممارسة الرياضة تطور التنسيق بين الحواس والعضلات، وتعزز الأداء البدني.</li>
+        </ul>
+
+        <h2>3. الرياضة في التاريخ:</h2>
+        <p>تعود ممارسة الرياضة إلى آلاف السنين، حيث كانت جزءًا من حياة الإنسان منذ العصور القديمة. في الحضارات المختلفة مثل اليونان القديمة، كانت الرياضة تُعتبر جزءًا لا يتجزأ من التربية البدنية والنفسية. الألعاب الأولمبية القديمة هي خير مثال على ذلك، حيث كانت تُقام للاحتفال بالرياضة والتنافس بين الشعوب.</p>
+
+        <h2>4. الرياضة في العصر الحديث:</h2>
+        <p>أصبحت الرياضة جزءًا رئيسيًا من حياتنا اليومية، حيث تتوفر مجموعة واسعة من الأنشطة الرياضية التي تلبي اهتمامات وأذواق مختلفة. تمثل الرياضة في العصر الحديث وسيلة لتعزيز التعاون بين الدول من خلال البطولات الدولية مثل كأس العالم، والألعاب الأولمبية الحديثة.</p>
+
+        <h2>5. أنواع الرياضات:</h2>
+        <p>تشمل الرياضة مجموعة متنوعة من الأنشطة التي تتناسب مع اهتمامات ومستويات اللياقة البدنية المختلفة. بعض الأنواع الرئيسية تشمل:</p>
+        <ul>
+            <li><strong>الرياضات الجماعية:</strong> مثل كرة القدم، وكرة السلة، والهوكي، والتي تتطلب التعاون والعمل الجماعي.</li>
+            <li><strong>الرياضات الفردية:</strong> مثل التنس، والجري، والسباحة، التي تعتمد على المهارات الفردية.</li>
+            <li><strong>الرياضات القتالية:</strong> مثل الملاكمة، والجودو، والتايكوندو، التي تركز على القوة واللياقة البدنية والانضباط.</li>
+            <li><strong>الرياضات الاستكشافية:</strong> مثل تسلق الجبال، والغوص، والتزلج، التي تجمع بين المغامرة واللياقة.</li>
+        </ul>
+
+        <h2>6. الرياضة والصحة:</h2>
+        <p>أثبتت العديد من الدراسات أن ممارسة الرياضة بانتظام يمكن أن تقلل من خطر الإصابة بالعديد من الأمراض المزمنة مثل أمراض القلب، والسكتات الدماغية، والسكري. بالإضافة إلى ذلك، تسهم الرياضة في تحسين جودة الحياة العامة، بما في ذلك تعزيز النوم وتحسين الأداء العقلي.</p>
+
+        <h2>7. الرياضة والتكنولوجيا:</h2>
+        <p>مع تطور التكنولوجيا، أصبحت الرياضة أكثر تقدمًا من خلال استخدام الأدوات الذكية والتقنيات المتقدمة لقياس الأداء وتحليل البيانات. من خلال التطبيقات والهواتف الذكية، يمكن للرياضيين والهواة متابعة تقدمهم وتحسين أدائهم بشكل مستمر.</p>
+
+        <h2>الخاتمة:</h2>
+        <p>الرياضة هي أكثر من مجرد نشاط بدني، بل هي أسلوب حياة يعزز من صحتنا النفسية والجسدية ويقوي علاقاتنا الاجتماعية. سواء كانت هواية أو مهنة، فإن ممارسة الرياضة بشكل منتظم يمكن أن تحسن حياتنا بشكل كبير وتساعدنا على مواجهة التحديات بثقة ونشاط.</p>
+
+        <div class="buttons">
+            <a href="https://wa.me/201099690137" class="btn">تواصل معنا</a>
+            <a href="#" class="btn" onclick="copyAndShare()">شارك المقال</a>
+            <a href="https://ar.wikipedia.org/wiki/رياضة" class="btn" target="_blank">تعلم أكثر</a>
+        </div>
+    </div>
+
+    <script>
+        function toggleTheme() {
+            document.body.classList.toggle('dark-theme');
+        }
+        function copyAndShare() {
+            const url = window.location.href;
+            navigator.clipboard.writeText(url).then(() => {
+                alert("تم نسخ الرابط بنجاح! يمكنك الآن مشاركته.");
+            });
+        }
+        function rate(star) {
+            alert("لقد قمت بتقييم المقال بـ " + star + " نجوم. شكرًا لمشاركتك!");
+        }
+    </script>
+</body>
+</html>

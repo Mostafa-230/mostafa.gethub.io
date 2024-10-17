@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مقالة عن الطاقة النظيفة</title>
+    <style>
+        body { 
+            font-family: 'Arial', sans-serif;
+            background-color: #eaeff1; /* لون خلفية جديد */
+            color: #2b2b2b; /* لون نص جديد */
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+            direction: rtl;
+            text-align: right;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .dark-theme {
+            background-color: #2b2b2b;
+            color: #eaeff1;
+        }
+        h1 {
+            font-size: 36px;
+            color: #4caf50; /* لون جديد */
+            text-align: center;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            font-size: 28px;
+            color: #388e3c; /* لون جديد */
+            text-transform: uppercase;
+            border-bottom: 2px solid #388e3c;
+            padding-bottom: 10px;
+        }
+        p {
+            font-size: 20px;
+            margin: 10px 0;
+        }
+        .article {
+            background-color: #ffffff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            margin: 20px 0;
+            transition: background-color 0.3s;
+        }
+        .dark-theme .article {
+            background-color: #444;
+        }
+        .btn {
+            background-color: #4caf50; /* لون جديد */
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 18px;
+            margin: 5px;
+            transition: background-color 0.3s;
+            display: inline-block;
+        }
+        .btn:hover {
+            background-color: #388e3c; /* لون جديد */
+        }
+        .image-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        img {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .toggle-btn {
+            background-color: #388e3c; /* لون جديد */
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .toggle-btn:hover {
+            background-color: #2e7d32; /* لون جديد */
+        }
+        .rating {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+        }
+        .star {
+            font-size: 36px;
+            color: gold;
+            margin-left: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="rating">
+            <span class="star" onclick="rate(1)">★</span>
+            <span class="star" onclick="rate(2)">★</span>
+            <span class="star" onclick="rate(3)">★</span>
+            <span class="star" onclick="rate(4)">★</span>
+            <span class="star" onclick="rate(5)">★</span>
+        </div>
+        <button class="toggle-btn" onclick="toggleTheme()">التبديل إلى الوضع الداكن</button>
+    </div>
+    
+    <h1>الطاقة النظيفة: مستقبل مستدام</h1>
+
+    <div class="article">
+        <div class="image-container">
+            <img src="image (14).webp" alt="الطاقة النظيفة">
+        </div>
+        <h2>1. تعريف الطاقة النظيفة:</h2>
+        <p>تشير الطاقة النظيفة إلى الطاقة التي يتم إنتاجها من مصادر متجددة، مثل الشمس، والرياح، والمياه، والتي لا تسبب انبعاثات ضارة أو تلوث. تعتبر الطاقة النظيفة جزءًا أساسيًا من الجهود العالمية لمكافحة التغير المناخي وضمان مستقبل مستدام للأجيال القادمة.</p>
+        
+        <h2>2. مصادر الطاقة النظيفة:</h2>
+        <p>تتعدد مصادر الطاقة النظيفة، ومن أبرزها:</p>
+        <ul>
+            <li><strong>الطاقة الشمسية:</strong> يتم استغلال أشعة الشمس من خلال الألواح الشمسية لإنتاج الكهرباء.</li>
+            <li><strong>طاقة الرياح:</strong> تستخدم توربينات الرياح لتحويل حركة الرياح إلى طاقة كهربائية.</li>
+            <li><strong>الطاقة المائية:</strong> تعتمد على تدفق المياه لتوليد الكهرباء من السدود ومحطات الطاقة الكهرومائية.</li>
+            <li><strong>الطاقة الجيوحرارية:</strong> تستفيد من حرارة باطن الأرض لتوليد الكهرباء.</li>
+            <li><strong>الطاقة الحيوية:</strong> تستخدم المواد العضوية مثل الخشب والنفايات لتوليد الطاقة.</li>
+        </ul>
+
+        <h2>3. فوائد الطاقة النظيفة:</h2>
+        <p>تتمتع الطاقة النظيفة بعدد من الفوائد، بما في ذلك:</p>
+        <ul>
+            <li><strong>تقليل انبعاثات الكربون:</strong> يساعد التحول إلى مصادر الطاقة النظيفة في تقليل انبعاثات غازات الاحتباس الحراري، مما يسهم في مكافحة التغير المناخي.</li>
+            <li><strong>استدامة الموارد:</strong> توفر مصادر الطاقة النظيفة طاقة متجددة ومستدامة، مما يقلل الاعتماد على الوقود الأحفوري المحدود.</li>
+            <li><strong>خلق فرص العمل:</strong> يعزز قطاع الطاقة النظيفة من إنشاء فرص عمل جديدة في مجالات البحث والتطوير والتركيب والصيانة.</li>
+            <li><strong>تحسين الصحة العامة:</strong> يساعد تقليل التلوث الناتج عن الوقود الأحفوري في تحسين جودة الهواء وصحة المجتمع.</li>
+            <li><strong>تحفيز الابتكار:</strong> يؤدي الاستثمار في الطاقة النظيفة إلى تطوير تقنيات جديدة تسهم في تحسين الكفاءة وتقليل التكاليف.</li>
+        </ul>
+
+        <h2>4. التحديات المرتبطة بالطاقة النظيفة:</h2>
+        <p>على الرغم من فوائدها، تواجه الطاقة النظيفة عددًا من التحديات، مثل:</p>
+        <ul>
+            <li><strong>تكاليف البداية:</strong> قد تتطلب الأنظمة الجديدة استثمارات كبيرة في البداية، مما قد يمثل عقبة أمام التحول السريع.</li>
+            <li><strong>التغيرات المناخية:</strong> تؤثر الظروف الجوية على إنتاج الطاقة المتجددة، مثل الطاقة الشمسية وطاقة الرياح.</li>
+            <li><strong>البنية التحتية:</strong> قد تتطلب الطاقة النظيفة بنية تحتية جديدة وشبكات نقل متطورة.</li>
+            <li><strong>الوعي العام:</strong> يحتاج المجتمع إلى مزيد من الوعي والفهم حول فوائد الطاقة النظيفة.</li>
+        </ul>
+
+        <h2>5. المستقبل المحتمل للطاقة النظيفة:</h2>
+        <p>من المتوقع أن تستمر الطاقة النظيفة في النمو والتطور. تتجه الدول نحو استثمارات أكبر في مشاريع الطاقة المتجددة، بينما تعمل التكنولوجيا على تحسين كفاءة استخدام الطاقة. يمكن أن تلعب الطاقة النظيفة دورًا رئيسيًا في تحقيق أهداف التنمية المستدامة وضمان مستقبل أفضل للأجيال القادمة.</p>
+
+        <h2>الخاتمة:</h2>
+        <p>تعد الطاقة النظيفة عنصرًا حيويًا في بناء مستقبل مستدام. من خلال استثمار المزيد في مصادر الطاقة النظيفة وتبني الابتكارات، يمكننا مواجهة التحديات البيئية وتحقيق التنمية المستدامة. إن التحول إلى الطاقة النظيفة ليس مجرد خيار، بل ضرورة لضمان كوكب صحي للأجيال القادمة.</p>
+        
+        <div class="buttons">
+            <a href="https://wa.me/201099690137" class="btn">تواصل معنا</a>
+            <a href="#" class="btn" onclick="copyAndShare()">شارك المقال</a>
+            <a href="https://ar.wikipedia.org/wiki/طاقة_متجددة" class="btn" target="_blank">تعلم أكثر</a>
+            <a href="index.html" class="btn">المزيد من المقالات</a>
+        </div>
+    </div>
+
+    <script>
+        // استعادة الوضع من localStorage عند تحميل الصفحة
+        window.onload

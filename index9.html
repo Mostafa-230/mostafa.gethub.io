@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مقالة عن التغذية السليمة</title>
+    <style>
+        body { 
+            font-family: 'Arial', sans-serif;
+            background-color: #eaeff1; /* لون خلفية جديد */
+            color: #2b2b2b; /* لون نص جديد */
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+            direction: rtl;
+            text-align: right;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .dark-theme {
+            background-color: #2b2b2b;
+            color: #eaeff1;
+        }
+        h1 {
+            font-size: 36px;
+            color: #e63946; /* لون جديد */
+            text-align: center;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            font-size: 28px;
+            color: #d50032; /* لون جديد */
+            text-transform: uppercase;
+            border-bottom: 2px solid #d50032;
+            padding-bottom: 10px;
+        }
+        p {
+            font-size: 20px;
+            margin: 10px 0;
+        }
+        .article {
+            background-color: #ffffff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            margin: 20px 0;
+            transition: background-color 0.3s;
+        }
+        .dark-theme .article {
+            background-color: #444;
+        }
+        .btn {
+            background-color: #e63946; /* لون جديد */
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 18px;
+            margin: 5px;
+            transition: background-color 0.3s;
+            display: inline-block;
+        }
+        .btn:hover {
+            background-color: #d50032; /* لون جديد */
+        }
+        .image-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        img {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .toggle-btn {
+            background-color: #d50032; /* لون جديد */
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .toggle-btn:hover {
+            background-color: #9b0000; /* لون جديد */
+        }
+        .rating {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+        }
+        .star {
+            font-size: 36px;
+            color: gold;
+            margin-left: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="rating">
+            <span class="star" onclick="rate(1)">★</span>
+            <span class="star" onclick="rate(2)">★</span>
+            <span class="star" onclick="rate(3)">★</span>
+            <span class="star" onclick="rate(4)">★</span>
+            <span class="star" onclick="rate(5)">★</span>
+        </div>
+        <button class="toggle-btn" onclick="toggleTheme()">التبديل إلى الوضع الداكن</button>
+    </div>
+    
+    <h1>التغذية السليمة: أساس الحياة الصحية</h1>
+
+    <div class="article">
+        <div class="image-container">
+            <img src="image (8).webp" alt="التغذية السليمة">
+        </div>
+        <h2>1. مقدمة:</h2>
+        <p>تعتبر التغذية السليمة أحد العناصر الأساسية للحياة الصحية. تلعب دورًا مهمًا في تعزيز صحة الفرد ورفاهيته. إن اختيار الأطعمة الصحية والمتوازنة يساعد في تحسين الطاقة والنشاط، ويقلل من مخاطر الإصابة بالعديد من الأمراض.</p>
+        
+        <h2>2. العناصر الأساسية للتغذية السليمة:</h2>
+        <p>تشمل التغذية السليمة تناول مجموعة متنوعة من العناصر الغذائية، منها:</p>
+        <ul>
+            <li><strong>الكربوهيدرات:</strong> تعتبر المصدر الرئيسي للطاقة. يمكن الحصول عليها من الخبز، الأرز، والمكرونة.</li>
+            <li><strong>البروتينات:</strong> ضرورية لبناء العضلات وإصلاح الأنسجة. يمكن العثور عليها في اللحوم، الأسماك، البيض، والبقوليات.</li>
+            <li><strong>الدهون الصحية:</strong> تحتاجها الجسم ولكن يجب تناولها بكميات معتدلة. تشمل المكسرات، زيت الزيتون، والأفوكادو.</li>
+            <li><strong>الفيتامينات والمعادن:</strong> تلعب دورًا أساسيًا في دعم وظائف الجسم المختلفة. يجب تناول الفواكه والخضروات الغنية بالفيتامينات.</li>
+            <li><strong>الماء:</strong> يعد شرب كمية كافية من الماء أمرًا ضروريًا للحفاظ على صحة الجسم.</li>
+        </ul>
+
+        <h2>3. فوائد التغذية السليمة:</h2>
+        <p>تساهم التغذية السليمة في:</p>
+        <ul>
+            <li><strong>تعزيز المناعة:</strong> تساهم الأطعمة الغنية بالفيتامينات والمعادن في تعزيز جهاز المناعة.</li>
+            <li><strong>تحسين المزاج:</strong> الأطعمة الصحية تساعد في تحسين المزاج وتقليل مشاعر الاكتئاب.</li>
+            <li><strong>زيادة مستوى الطاقة:</strong> التغذية الجيدة تساهم في تحسين مستوى الطاقة والنشاط طوال اليوم.</li>
+            <li><strong>دعم صحة القلب:</strong> تناول الأطعمة الصحية يساعد في تقليل مخاطر الأمراض القلبية.</li>
+            <li><strong>الحفاظ على وزن صحي:</strong> تساعد التغذية السليمة في الحفاظ على الوزن المثالي.</li>
+        </ul>
+
+        <h2>4. نصائح للتغذية السليمة:</h2>
+        <p>إليك بعض النصائح التي يمكن اتباعها للحصول على تغذية سليمة:</p>
+        <ul>
+            <li><strong>تناول وجبات متوازنة:</strong> احرص على تضمين مجموعة متنوعة من الأطعمة في كل وجبة.</li>
+            <li><strong>تجنب الأطعمة المصنعة:</strong> حاول تجنب الأطعمة التي تحتوي على سكريات مضافة ودهون مشبعة.</li>
+            <li><strong>تناول كميات كافية من الفواكه والخضروات:</strong> حاول تناول خمس حصص يوميًا على الأقل.</li>
+            <li><strong>اشرب الماء بانتظام:</strong> احرص على شرب الماء طوال اليوم.</li>
+            <li><strong>ممارسة الرياضة:</strong> حاول ممارسة النشاط البدني بانتظام لدعم صحتك العامة.</li>
+        </ul>
+
+        <h2>5. الخاتمة:</h2>
+        <p>التغذية السليمة ليست مجرد نظام غذائي، بل هي أسلوب حياة. من خلال اختيار الأطعمة الصحية، يمكننا تحسين صحتنا وجودتنا في الحياة. لذا، من الضروري أن نكون واعين لما نأكله وكيف يؤثر على صحتنا. التغذية السليمة هي مفتاح لحياة صحية وسعيدة.</p>
+        
+        <div class="buttons">
+            <a href="https://wa.me/201099690137" class="btn">تواصل معنا</a>
+            <a href="#" class="btn" onclick="copyAndShare()">شارك المقال</a>
+            <a href="https://ar.wikipedia.org/wiki/تغذية_سليمة" class="btn" target="_blank">تعلم أكثر</a>
+            <a href="index.html" class="btn">المزيد من المقالات</a>
+        </div>
+    </div>
+
+    <script>
+        // استعادة الوضع من localStorage عند تحميل الصفحة
+        window.onload = function() {
+            const savedTheme = localStorage.getItem('theme');
+            const body = document.body;
+            const btn = document.querySelector('.toggle-btn');
+            
+            if (savedTheme === 'dark') {
+                body.classList.add('dark-theme');
+                btn.textContent = 'التبديل إلى الوضع الفاتح';
+            } else {
+                btn.textContent = 'التبديل إلى الوضع الداكن';
+            }
+        };
+
+        // وظيفة لتبديل السمة
+        function toggleTheme() {
+            const body = document.body;
+            const btn = document.querySelector('.toggle-btn');
+
+            if (body.classList.contains('dark-theme')) {
+                body.classList.remove('dark-theme');
+                btn.textContent = 'التبديل إلى الوضع الداكن';
+                localStorage.setItem('theme', 'light');
+            } else {
+                body.classList.add('dark-theme');
+                btn.textContent = 'التبديل إلى الوضع الفاتح';
+                localStorage.setItem('theme', 'dark');
+            }
+        }
+
+        // وظيفة لتقييم المقال
+        function rate(star) {
+            const stars = document.querySelectorAll('.star');
+            stars.forEach((s, index) => {
+                if (index < star) {
+                    s.style.color = 'gold'; // تغيير لون النجوم
+                } else {
+                    s.style.color = '#ccc'; // لون النجوم الفارغة
+                }
+            });
+        }
+
+        // وظيفة لمشاركة المقال
+        function copyAndShare() {
+            const url = window.location.href;
+            navigator.clipboard.writeText(url).then(() => {
+                alert('تم نسخ الرابط لمشاركته!');
+            });
+        }
+    </script>
+</body>
+</html>

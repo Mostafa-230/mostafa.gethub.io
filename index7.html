@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مقالة عن التكنولوجيا</title>
+    <style>
+        body { 
+            font-family: 'Arial', sans-serif;
+            background-color: #eaeff1; /* لون خلفية جديد */
+            color: #2b2b2b; /* لون نص جديد */
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+            direction: rtl;
+            text-align: right;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .dark-theme {
+            background-color: #2b2b2b;
+            color: #eaeff1;
+        }
+        h1 {
+            font-size: 36px;
+            color: #4a90e2; /* لون جديد */
+            text-align: center;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            font-size: 28px;
+            color: #003366; /* لون جديد */
+            text-transform: uppercase;
+            border-bottom: 2px solid #003366;
+            padding-bottom: 10px;
+        }
+        p {
+            font-size: 20px;
+            margin: 10px 0;
+        }
+        .article {
+            background-color: #ffffff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            margin: 20px 0;
+            transition: background-color 0.3s;
+        }
+        .dark-theme .article {
+            background-color: #444;
+        }
+        .btn {
+            background-color: #4a90e2; /* لون جديد */
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 18px;
+            margin: 5px;
+            transition: background-color 0.3s;
+            display: inline-block;
+        }
+        .btn:hover {
+            background-color: #357ab8; /* لون جديد */
+        }
+        .image-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        img {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .toggle-btn {
+            background-color: #003366; /* لون جديد */
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .toggle-btn:hover {
+            background-color: #001f33; /* لون جديد */
+        }
+        .rating {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+        }
+        .star {
+            font-size: 36px;
+            color: gold;
+            margin-left: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="rating">
+            <span class="star" onclick="rate(1)">★</span>
+            <span class="star" onclick="rate(2)">★</span>
+            <span class="star" onclick="rate(3)">★</span>
+            <span class="star" onclick="rate(4)">★</span>
+            <span class="star" onclick="rate(5)">★</span>
+        </div>
+        <button class="toggle-btn" onclick="toggleTheme()">التبديل إلى الوضع الداكن</button>
+    </div>
+    
+    <h1>التكنولوجيا: ثورة العصر الحديث</h1>
+
+    <div class="article">
+        <div class="image-container">
+            <img src="image (6).webp" alt="التكنولوجيا">
+        </div>
+        <h2>1. تعريف التكنولوجيا:</h2>
+        <p>التكنولوجيا هي مجموعة من الأدوات، الأنظمة، والمعرفة التي يتم استخدامها لتلبية احتياجات البشرية وتحسين نوعية الحياة. تشمل التكنولوجيا كل شيء من الأدوات البسيطة إلى الأنظمة المعقدة التي تؤثر على حياتنا اليومية.</p>
+        
+        <h2>2. أهمية التكنولوجيا في الحياة اليومية:</h2>
+        <p>أصبحت التكنولوجيا جزءًا لا يتجزأ من حياتنا اليومية، حيث تؤثر على كل جانب من جوانب الحياة. من بين الفوائد الرئيسية للتكنولوجيا:</p>
+        <ul>
+            <li><strong>التواصل:</strong> تسهل التكنولوجيا الاتصال بين الأفراد من خلال الهواتف الذكية، البريد الإلكتروني، ووسائل التواصل الاجتماعي.</li>
+            <li><strong>التعلم:</strong> توفر الإنترنت مصادر تعليمية متنوعة، مما يسهل الوصول إلى المعلومات والدورات التعليمية.</li>
+            <li><strong>الصحة:</strong> تساهم التكنولوجيا في تحسين الرعاية الصحية من خلال الأجهزة الطبية الحديثة وأنظمة المعلومات الصحية.</li>
+            <li><strong>الترفيه:</strong> توفر التكنولوجيا وسائل ترفيه متنوعة، مثل الألعاب الإلكترونية، الأفلام، والموسيقى.</li>
+            <li><strong>العمل:</strong> تساهم التكنولوجيا في تسهيل الأعمال وزيادة الإنتاجية من خلال استخدام البرمجيات وأدوات إدارة المشاريع.</li>
+        </ul>
+
+        <h2>3. التطورات التكنولوجية:</h2>
+        <p>شهدت التكنولوجيا تطورات هائلة في السنوات الأخيرة، مع ظهور عدة اتجاهات رئيسية:</p>
+        <ul>
+            <li><strong>الذكاء الاصطناعي:</strong> يعد الذكاء الاصطناعي أحد أبرز التطورات، حيث يتم استخدامه في مختلف الصناعات لتحسين الكفاءة واتخاذ القرارات.</li>
+            <li><strong>إنترنت الأشياء:</strong> يتيح إنترنت الأشياء ربط الأجهزة المنزلية والشخصية بالإنترنت، مما يسهل التحكم فيها ومراقبتها.</li>
+            <li><strong>الواقع الافتراضي:</strong> يستخدم الواقع الافتراضي في العديد من المجالات مثل التعليم والترفيه، حيث يوفر تجارب تفاعلية وغامرة.</li>
+            <li><strong>التكنولوجيا الحيوية:</strong> تساهم التكنولوجيا الحيوية في تطوير العلاجات الطبية، مما يحسن من جودة الرعاية الصحية.</li>
+            <li><strong>تكنولوجيا المعلومات:</strong> تساهم في تحسين أداء الشركات من خلال إدارة البيانات وتحليلها.</li>
+        </ul>
+
+        <h2>4. التحديات المرتبطة بالتكنولوجيا:</h2>
+        <p>رغم الفوائد العديدة التي تقدمها التكنولوجيا، إلا أنها تواجه بعض التحديات:</p>
+        <ul>
+            <li><strong>الأمان:</strong> تشكل الهجمات الإلكترونية تهديدًا للأفراد والشركات على حد سواء.</li>
+            <li><strong>الخصوصية:</strong> تثير التكنولوجيا قضايا تتعلق بالخصوصية، حيث يمكن أن يتم جمع البيانات الشخصية دون موافقة الأفراد.</li>
+            <li><strong>الإدمان:</strong> يمكن أن يؤدي الاستخدام المفرط للأجهزة التكنولوجية إلى مشاكل صحية ونفسية.</li>
+            <li><strong>التباين الرقمي:</strong> لا يزال هناك فرق في الوصول إلى التكنولوجيا بين المجتمعات المختلفة.</li>
+        </ul>
+
+        <h2>5. المستقبل التكنولوجي:</h2>
+        <p>مع استمرار تطور التكنولوجيا، يتوقع أن تكون هناك تغييرات هائلة في المستقبل. من المحتمل أن نرى المزيد من الابتكارات في مجالات الذكاء الاصطناعي، والروبوتات، وتكنولوجيا النانو، مما سيؤثر بشكل كبير على حياتنا اليومية ويغير الطريقة التي نعيش بها.</p>
+
+        <h2>الخاتمة:</h2>
+        <p>تعتبر التكنولوجيا أداة قوية لديها القدرة على تغيير العالم للأفضل. من المهم استخدام هذه التكنولوجيا بشكل مسؤول وواعي لضمان تحقيق الفوائد القصوى مع تقليل المخاطر. علينا أن نكون مستعدين للتكيف مع التغيرات التي تجلبها التكنولوجيا، والعمل على استخدامها لتعزيز حياتنا وتحسين المجتمع.</p>
+        
+        <div class="buttons">
+            <a href="https://wa.me/201099690137" class="btn">تواصل معنا</a>
+            <a href="#" class="btn" onclick="copyAndShare()">شارك المقال</a>
+            <a href="https://ar.wikipedia.org/wiki/تكنولوجيا" class="btn" target="_blank">تعلم أكثر</a>
+            <a href="index.html" class="btn">المزيد من المقالات</a>
+        </div>
+    </div>
+
+    <script>
+        // استعادة الوضع من localStorage عند تحميل الصفحة
+        window.onload = function() {
+            const savedTheme = localStorage.getItem('theme');
+            if (savedTheme === 'dark') {
+                document.body.classList.add('dark-theme');
+                document.querySelector('.toggle-btn').innerText = 'التبديل إلى الوضع الفاتح';
+            }
+        };
+
+        function toggleTheme() {
+            document.body.classList.toggle('dark-theme');
+            const theme = document.body.classList.contains('dark-theme') ? 'dark' : 'light';
+            localStorage.setItem('theme', theme);
+            document.querySelector('.toggle-btn').innerText = theme === 'dark' ? 'التبديل إلى الوضع الفاتح' : 'التبديل إلى الوضع الداكن';
+        }
+
+        function rate(stars) {
+            alert('لقد قمت بتقييم المقال بـ ' + stars + ' نجوم!');
+            // هنا يمكنك إضافة كود لحفظ التقييم في قاعدة البيانات أو ملف.
+        }
+
+        function copyAndShare() {
+            navigator.clipboard.writeText(window.location.href).then(() => {
+                alert('تم نسخ رابط المقال! شارك مع أصدقائك.');
+            }).catch(err => {
+                alert('فشل في نسخ الرابط: ', err);
+            });
+        }
+    </script>
+</body>
+</html>
